@@ -13,5 +13,4 @@ module load hdf5/1.12.0_gcc-8.3.0
 module load workspace/scratch
 export TMPDIR=$SCRATCH
 
-
-Rscript --vanilla cell-cell_interaction.R
+Rscript --vanilla cell-cell_interaction_score_by_Sample_CD4.R

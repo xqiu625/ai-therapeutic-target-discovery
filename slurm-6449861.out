@@ -1,0 +1,429 @@
+Unloading R/4.0.1
+  Unloading useless requirement: java/8u45 libiconv/1.16 hdf5/1.10.1 gdal/2.1.3
+    geos/3.7.1 java/8 netcdf/4.4.1.1 pandoc/2.9.2.1 texlive/2017 ggobi/2.1.11
+    workspace/scratch
+Loading R/4.1.0_gcc-8.3.0
+  Loading requirement: workspace/scratch GCCcore/8.3.0
+    binutils/2.35.1-GCCcore-8.3.0 GCC/8.3.0 gdal/3.2.2_gcc-8.3.0
+    geos/3.9.1_gcc-8.3.0 texlive/2017 pandoc/2.9.2.1 java/16.0.1
+Registered S3 method overwritten by 'spatstat.geom':
+  method     from
+  print.boxx cli 
+Attaching SeuratObject
+Warning messages:
+1: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘tibble’ 
+2: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘pillar’ 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘ggpubr’
+
+The following object is masked from ‘package:cowplot’:
+
+    get_legend
+
+Warning message:
+replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘hms’ 
+
+Attaching package: ‘rstatix’
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+Registered S3 method overwritten by 'gamlss':
+  method   from
+  print.ri bit 
+There were 21 warnings (use warnings() to see them)
+                                                            Cell_ID
+GSM4557327_555_1.2_CAGCATGTAGGT_1   GSM4557327_555_1.2_CAGCATGTAGGT
+GSM4557327_555_1.3_TGCGCTTGTTCA_1   GSM4557327_555_1.3_TGCGCTTGTTCA
+GSM4557327_555_1.7_CCCAACCATTCC_1   GSM4557327_555_1.7_CCCAACCATTCC
+GSM4557327_555_1.8_ATTCCTGGTTTC_1   GSM4557327_555_1.8_ATTCCTGGTTTC
+GSM4557327_555_1.17_TTGGAGGCGCGA_1 GSM4557327_555_1.17_TTGGAGGCGCGA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1 GSM4557327_555_1.18_GTCCGTTTGCGT
+                                         orig.ident nCount_RNA nFeature_RNA
+GSM4557327_555_1.2_CAGCATGTAGGT_1  GSM4557327_555_1       1099          160
+GSM4557327_555_1.3_TGCGCTTGTTCA_1  GSM4557327_555_1       1055          212
+GSM4557327_555_1.7_CCCAACCATTCC_1  GSM4557327_555_1       2411          312
+GSM4557327_555_1.8_ATTCCTGGTTTC_1  GSM4557327_555_1       2275          335
+GSM4557327_555_1.17_TTGGAGGCGCGA_1 GSM4557327_555_1       1085          424
+GSM4557327_555_1.18_GTCCGTTTGCGT_1 GSM4557327_555_1       1129          411
+                                   percent.mt percent.rps percent.rpl
+GSM4557327_555_1.2_CAGCATGTAGGT_1   13.102821  0.36396724   0.3639672
+GSM4557327_555_1.3_TGCGCTTGTTCA_1    2.938389  0.66350711   0.9478673
+GSM4557327_555_1.7_CCCAACCATTCC_1   10.908337  0.04147657   0.1659063
+GSM4557327_555_1.8_ATTCCTGGTTTC_1   11.208791  0.26373626   0.3076923
+GSM4557327_555_1.17_TTGGAGGCGCGA_1   7.373272  2.39631336   1.5668203
+GSM4557327_555_1.18_GTCCGTTTGCGT_1  10.628875  1.94862710   2.7457927
+                                   percent.rrna nCount_SCT nFeature_SCT
+GSM4557327_555_1.2_CAGCATGTAGGT_1      58.78071       1738          161
+GSM4557327_555_1.3_TGCGCTTGTTCA_1      55.82938       1706          217
+GSM4557327_555_1.7_CCCAACCATTCC_1      67.39942       2040          312
+GSM4557327_555_1.8_ATTCCTGGTTTC_1      67.38462       2013          335
+GSM4557327_555_1.17_TTGGAGGCGCGA_1     35.11521       1627          424
+GSM4557327_555_1.18_GTCCGTTTGCGT_1     41.09832       1670          411
+                                   SCT_snn_res.1 seurat_clusters Donor.orig
+GSM4557327_555_1.2_CAGCATGTAGGT_1              8               8        555
+GSM4557327_555_1.3_TGCGCTTGTTCA_1             16              16        555
+GSM4557327_555_1.7_CCCAACCATTCC_1              8               8        555
+GSM4557327_555_1.8_ATTCCTGGTTTC_1             18              18        555
+GSM4557327_555_1.17_TTGGAGGCGCGA_1            20              20        555
+GSM4557327_555_1.18_GTCCGTTTGCGT_1            18              18        555
+                                   Donor.full Donor Status DPS DTF Admission
+GSM4557327_555_1.2_CAGCATGTAGGT_1        C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.3_TGCGCTTGTTCA_1        C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.7_CCCAACCATTCC_1        C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.8_ATTCCTGGTTTC_1        C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.17_TTGGAGGCGCGA_1       C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.18_GTCCGTTTGCGT_1       C1 A    C1  COVID   9   9       ICU
+                                   Ventilated clinical.outcome pruned.labels
+GSM4557327_555_1.2_CAGCATGTAGGT_1     NonVent       Discharged        B_cell
+GSM4557327_555_1.3_TGCGCTTGTTCA_1     NonVent       Discharged        B_cell
+GSM4557327_555_1.7_CCCAACCATTCC_1     NonVent       Discharged        B_cell
+GSM4557327_555_1.8_ATTCCTGGTTTC_1     NonVent       Discharged        B_cell
+GSM4557327_555_1.17_TTGGAGGCGCGA_1    NonVent       Discharged        B_cell
+GSM4557327_555_1.18_GTCCGTTTGCGT_1    NonVent       Discharged        B_cell
+                                   seq_folder nUMI nGene log10GenesPerUMI
+GSM4557327_555_1.2_CAGCATGTAGGT_1        <NA>   NA    NA               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1        <NA>   NA    NA               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1        <NA>   NA    NA               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1        <NA>   NA    NA               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1       <NA>   NA    NA               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1       <NA>   NA    NA               NA
+                                   mitoRatio cells sample nReads_RNA nReads_ALL
+GSM4557327_555_1.2_CAGCATGTAGGT_1         NA  <NA>   <NA>         NA         NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1         NA  <NA>   <NA>         NA         NA
+GSM4557327_555_1.7_CCCAACCATTCC_1         NA  <NA>   <NA>         NA         NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1         NA  <NA>   <NA>         NA         NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1        NA  <NA>   <NA>         NA         NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1        NA  <NA>   <NA>         NA         NA
+                                   percent.mito percent.hb donor
+GSM4557327_555_1.2_CAGCATGTAGGT_1            NA         NA  <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1            NA         NA  <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1            NA         NA  <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1            NA         NA  <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1           NA         NA  <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1           NA         NA  <NA>
+                                   onset_of_symptoms days_after_onset sampleID
+GSM4557327_555_1.2_CAGCATGTAGGT_1               <NA>               NA     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1               <NA>               NA     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1               <NA>               NA     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1               <NA>               NA     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1              <NA>               NA     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1              <NA>               NA     <NA>
+                                   origID date_of_sampling DaysAfterSample0
+GSM4557327_555_1.2_CAGCATGTAGGT_1    <NA>             <NA>               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1    <NA>             <NA>               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1    <NA>             <NA>               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1    <NA>             <NA>               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1   <NA>             <NA>               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1   <NA>             <NA>               NA
+                                   experiment PoolID sampletag hash.ID platform
+GSM4557327_555_1.2_CAGCATGTAGGT_1        <NA>   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1        <NA>   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1        <NA>   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1        <NA>   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1       <NA>   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1       <NA>   <NA>      <NA>    <NA>     <NA>
+                                   purification  age  sex group_per_sample
+GSM4557327_555_1.2_CAGCATGTAGGT_1          <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1          <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1          <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1          <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1         <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1         <NA> <NA> <NA>             <NA>
+                                   who_per_sample disease_stage outcome
+GSM4557327_555_1.2_CAGCATGTAGGT_1              NA          <NA>    <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1              NA          <NA>    <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1              NA          <NA>    <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1              NA          <NA>    <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1             NA          <NA>    <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1             NA          <NA>    <NA>
+                                   comorbidities
+GSM4557327_555_1.2_CAGCATGTAGGT_1           <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1           <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1           <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1           <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1          <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1          <NA>
+                                   COVID.19.related_medication_and_anti.microbials
+GSM4557327_555_1.2_CAGCATGTAGGT_1                                             <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                                             <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                                             <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                                             <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                                            <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                                            <NA>
+                                   RNA_snn_res.0.4 cluster_labels_res.0.4
+GSM4557327_555_1.2_CAGCATGTAGGT_1             <NA>                   <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1             <NA>                   <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1             <NA>                   <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1             <NA>                   <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1            <NA>                   <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1            <NA>                   <NA>
+                                   new.order id.celltype hpca.labels
+GSM4557327_555_1.2_CAGCATGTAGGT_1       <NA>        <NA>        <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1       <NA>        <NA>        <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1       <NA>        <NA>        <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1       <NA>        <NA>        <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1      <NA>        <NA>        <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1      <NA>        <NA>        <NA>
+                                   blueprint.labels monaco.labels immune.labels
+GSM4557327_555_1.2_CAGCATGTAGGT_1              <NA>          <NA>          <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1              <NA>          <NA>          <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1              <NA>          <NA>          <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1              <NA>          <NA>          <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1             <NA>          <NA>          <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1             <NA>          <NA>          <NA>
+                                   dmap.labels hemato.labels nCount_HTOsPool1
+GSM4557327_555_1.2_CAGCATGTAGGT_1         <NA>          <NA>               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1         <NA>          <NA>               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1         <NA>          <NA>               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1         <NA>          <NA>               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1        <NA>          <NA>               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1        <NA>          <NA>               NA
+                                   nFeature_HTOsPool1 nCount_HTOsPool2
+GSM4557327_555_1.2_CAGCATGTAGGT_1                  NA               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                  NA               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1                  NA               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                  NA               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                 NA               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                 NA               NA
+                                   nFeature_HTOsPool2 nCount_HTOsPool3
+GSM4557327_555_1.2_CAGCATGTAGGT_1                  NA               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                  NA               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1                  NA               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                  NA               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                 NA               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                 NA               NA
+                                   nFeature_HTOsPool3 nCount_HTOsPool4
+GSM4557327_555_1.2_CAGCATGTAGGT_1                  NA               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                  NA               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1                  NA               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                  NA               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                 NA               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                 NA               NA
+                                   nFeature_HTOsPool4 nCount_HTOsPool5
+GSM4557327_555_1.2_CAGCATGTAGGT_1                  NA               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                  NA               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1                  NA               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                  NA               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                 NA               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                 NA               NA
+                                   nFeature_HTOsPool5 nCount_HTOsPool6
+GSM4557327_555_1.2_CAGCATGTAGGT_1                  NA               NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                  NA               NA
+GSM4557327_555_1.7_CCCAACCATTCC_1                  NA               NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                  NA               NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                 NA               NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                 NA               NA
+                                   nFeature_HTOsPool6 RNA_snn_res.1 Disease
+GSM4557327_555_1.2_CAGCATGTAGGT_1                  NA          <NA>    <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                  NA          <NA>    <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                  NA          <NA>    <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                  NA          <NA>    <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                 NA          <NA>    <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                 NA          <NA>    <NA>
+                                   Disease_group  Sex  Age celltype majortype
+GSM4557327_555_1.2_CAGCATGTAGGT_1           <NA> <NA> <NA>     <NA>      <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1           <NA> <NA> <NA>     <NA>      <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1           <NA> <NA> <NA>     <NA>      <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1           <NA> <NA> <NA>     <NA>      <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1          <NA> <NA> <NA>     <NA>      <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1          <NA> <NA> <NA>     <NA>      <NA>
+                                   batch tissue dsm_severity_score_group assay
+GSM4557327_555_1.2_CAGCATGTAGGT_1   <NA>   <NA>                     <NA>  <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1   <NA>   <NA>                     <NA>  <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1   <NA>   <NA>                     <NA>  <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1   <NA>   <NA>                     <NA>  <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1  <NA>   <NA>                     <NA>  <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1  <NA>   <NA>                     <NA>  <NA>
+                                   ethnicity disease disease_ontology_term_id
+GSM4557327_555_1.2_CAGCATGTAGGT_1       <NA>    <NA>                     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1       <NA>    <NA>                     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1       <NA>    <NA>                     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1       <NA>    <NA>                     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1      <NA>    <NA>                     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1      <NA>    <NA>                     <NA>
+                                   assay_ontology_term_id severity
+GSM4557327_555_1.2_CAGCATGTAGGT_1                    <NA>     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                    <NA>     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                    <NA>     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                    <NA>     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                   <NA>     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                   <NA>     <NA>
+                                   tissue_ontology_term_id timepoint
+GSM4557327_555_1.2_CAGCATGTAGGT_1                     <NA>      <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                     <NA>      <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                     <NA>      <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                     <NA>      <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                    <NA>      <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                    <NA>      <NA>
+                                   dsm_severity_score days_since_hospitalized
+GSM4557327_555_1.2_CAGCATGTAGGT_1                <NA>                    <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                <NA>                    <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                <NA>                    <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                <NA>                    <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1               <NA>                    <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1               <NA>                    <NA>
+                                   development_stage_ontology_term_id
+GSM4557327_555_1.2_CAGCATGTAGGT_1                                <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                                <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                                <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                                <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                               <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                               <NA>
+                                   ethnicity_ontology_term_id days_since_onset
+GSM4557327_555_1.2_CAGCATGTAGGT_1                        <NA>             <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                        <NA>             <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                        <NA>             <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                        <NA>             <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                       <NA>             <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                       <NA>             <NA>
+                                   cell_type_ontology_term_id development_stage
+GSM4557327_555_1.2_CAGCATGTAGGT_1                        <NA>              <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                        <NA>              <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                        <NA>              <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                        <NA>              <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                       <NA>              <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                       <NA>              <NA>
+                                   cell_type ever_admitted_to_icu material_type
+GSM4557327_555_1.2_CAGCATGTAGGT_1       <NA>                 <NA>          <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1       <NA>                 <NA>          <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1       <NA>                 <NA>          <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1       <NA>                 <NA>          <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1      <NA>                 <NA>          <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1      <NA>                 <NA>          <NA>
+                                   nCount_raw nFeature_raw sample_id n_genes
+GSM4557327_555_1.2_CAGCATGTAGGT_1          NA           NA      <NA>      NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1          NA           NA      <NA>      NA
+GSM4557327_555_1.7_CCCAACCATTCC_1          NA           NA      <NA>      NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1          NA           NA      <NA>      NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1         NA           NA      <NA>      NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1         NA           NA      <NA>      NA
+                                   n_genes_by_counts total_counts
+GSM4557327_555_1.2_CAGCATGTAGGT_1                 NA           NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                 NA           NA
+GSM4557327_555_1.7_CCCAACCATTCC_1                 NA           NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                 NA           NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                NA           NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                NA           NA
+                                   total_counts_mt pct_counts_mt
+GSM4557327_555_1.2_CAGCATGTAGGT_1               NA            NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1               NA            NA
+GSM4557327_555_1.7_CCCAACCATTCC_1               NA            NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1               NA            NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1              NA            NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1              NA            NA
+                                   full_clustering initial_clustering Resample
+GSM4557327_555_1.2_CAGCATGTAGGT_1             <NA>               <NA>     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1             <NA>               <NA>     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1             <NA>               <NA>     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1             <NA>               <NA>     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1            <NA>               <NA>     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1            <NA>               <NA>     <NA>
+                                   Collection_Day Age_interval Swab_result
+GSM4557327_555_1.2_CAGCATGTAGGT_1            <NA>         <NA>        <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1            <NA>         <NA>        <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1            <NA>         <NA>        <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1            <NA>         <NA>        <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1           <NA>         <NA>        <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1           <NA>         <NA>        <NA>
+                                   Smoker Status_on_day_collection
+GSM4557327_555_1.2_CAGCATGTAGGT_1    <NA>                     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1    <NA>                     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1    <NA>                     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1    <NA>                     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1   <NA>                     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1   <NA>                     <NA>
+                                   Status_on_day_collection_summary
+GSM4557327_555_1.2_CAGCATGTAGGT_1                              <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                              <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                              <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                              <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                             <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                             <NA>
+                                   Days_from_onset Site time_after_LPS
+GSM4557327_555_1.2_CAGCATGTAGGT_1             <NA> <NA>           <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1             <NA> <NA>           <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1             <NA> <NA>           <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1             <NA> <NA>           <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1            <NA> <NA>           <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1            <NA> <NA>           <NA>
+                                   Worst_Clinical_Status Outcome patient_id
+GSM4557327_555_1.2_CAGCATGTAGGT_1                   <NA>    <NA>       <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                   <NA>    <NA>       <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                   <NA>    <NA>       <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                   <NA>    <NA>       <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                  <NA>    <NA>       <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                  <NA>    <NA>       <NA>
+                                   Patient cell_types Timepoint Pseudotime_name
+GSM4557327_555_1.2_CAGCATGTAGGT_1     <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1     <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1     <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1     <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1    <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1    <NA>       <NA>      <NA>            <NA>
+                                   Pseudotime cell_of_interes class V323 V330
+GSM4557327_555_1.2_CAGCATGTAGGT_1        <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1        <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1        <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1        <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1       <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1       <NA>            <NA>  <NA> <NA> <NA>
+                                   RNA_snn_res.0.2 cell_types2 Celltype
+GSM4557327_555_1.2_CAGCATGTAGGT_1             <NA>        <NA>     <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1             <NA>        <NA>     <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1             <NA>        <NA>     <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1             <NA>        <NA>     <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1            <NA>        <NA>     <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1            <NA>        <NA>     <NA>
+                                   RNA_snn_res.0.1 nCount_integrated
+GSM4557327_555_1.2_CAGCATGTAGGT_1             <NA>                NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1             <NA>                NA
+GSM4557327_555_1.7_CCCAACCATTCC_1             <NA>                NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1             <NA>                NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1            <NA>                NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1            <NA>                NA
+                                   nFeature_integrated Gender ICU_vs_FLOOR
+GSM4557327_555_1.2_CAGCATGTAGGT_1                   NA   <NA>         <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1                   NA   <NA>         <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1                   NA   <NA>         <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1                   NA   <NA>         <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1                  NA   <NA>         <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1                  NA   <NA>         <NA>
+                                   Qualitative_score covid_status S.Score
+GSM4557327_555_1.2_CAGCATGTAGGT_1               <NA>         <NA>      NA
+GSM4557327_555_1.3_TGCGCTTGTTCA_1               <NA>         <NA>      NA
+GSM4557327_555_1.7_CCCAACCATTCC_1               <NA>         <NA>      NA
+GSM4557327_555_1.8_ATTCCTGGTTTC_1               <NA>         <NA>      NA
+GSM4557327_555_1.17_TTGGAGGCGCGA_1              <NA>         <NA>      NA
+GSM4557327_555_1.18_GTCCGTTTGCGT_1              <NA>         <NA>      NA
+                                   G2M.Score Phase integrated_snn_res.1.2
+GSM4557327_555_1.2_CAGCATGTAGGT_1         NA  <NA>                   <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1         NA  <NA>                   <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1         NA  <NA>                   <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1         NA  <NA>                   <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1        NA  <NA>                   <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1        NA  <NA>                   <NA>
+                                   condition sample_type time
+GSM4557327_555_1.2_CAGCATGTAGGT_1       <NA>        <NA> <NA>
+GSM4557327_555_1.3_TGCGCTTGTTCA_1       <NA>        <NA> <NA>
+GSM4557327_555_1.7_CCCAACCATTCC_1       <NA>        <NA> <NA>
+GSM4557327_555_1.8_ATTCCTGGTTTC_1       <NA>        <NA> <NA>
+GSM4557327_555_1.17_TTGGAGGCGCGA_1      <NA>        <NA> <NA>
+GSM4557327_555_1.18_GTCCGTTTGCGT_1      <NA>        <NA> <NA>
+[1] 400840     18
+Error in asMethod(object) : 
+  Cholmod error 'problem too large' at file ../Core/cholmod_dense.c, line 102
+Calls: t ... as.data.frame -> as.matrix -> as.matrix -> as -> asMethod
+Execution halted

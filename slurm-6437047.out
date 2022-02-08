@@ -1,0 +1,1054 @@
+Unloading R/4.0.1
+  Unloading useless requirement: java/8u45 libiconv/1.16 hdf5/1.10.1 gdal/2.1.3
+    geos/3.7.1 java/8 netcdf/4.4.1.1 pandoc/2.9.2.1 texlive/2017 ggobi/2.1.11
+    workspace/scratch
+Loading R/4.1.0_gcc-8.3.0
+  Loading requirement: workspace/scratch GCCcore/8.3.0
+    binutils/2.35.1-GCCcore-8.3.0 GCC/8.3.0 gdal/3.2.2_gcc-8.3.0
+    geos/3.9.1_gcc-8.3.0 texlive/2017 pandoc/2.9.2.1 java/16.0.1
+Registered S3 method overwritten by 'spatstat.geom':
+  method     from
+  print.boxx cli 
+Attaching SeuratObject
+Warning messages:
+1: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘tibble’ 
+2: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘pillar’ 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘ggpubr’
+
+The following object is masked from ‘package:cowplot’:
+
+    get_legend
+
+Warning message:
+replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘hms’ 
+
+Attaching package: ‘rstatix’
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+Registered S3 method overwritten by 'gamlss':
+  method   from
+  print.ri bit 
+There were 21 warnings (use warnings() to see them)
+                                                            Cell_ID
+GSM4557327_555_1.19_CATCTGGCTATC_1 GSM4557327_555_1.19_CATCTGGCTATC
+GSM4557327_555_1.33_TAACGCAAACCC_1 GSM4557327_555_1.33_TAACGCAAACCC
+GSM4557327_555_1.47_ACGCTCACTCAA_1 GSM4557327_555_1.47_ACGCTCACTCAA
+GSM4557327_555_1.49_TACCCTAATAAA_1 GSM4557327_555_1.49_TACCCTAATAAA
+GSM4557327_555_1.62_AGACCCTTCATT_1 GSM4557327_555_1.62_AGACCCTTCATT
+GSM4557327_555_1.65_TTCTCTGTCTGG_1 GSM4557327_555_1.65_TTCTCTGTCTGG
+                                         orig.ident nCount_RNA nFeature_RNA
+GSM4557327_555_1.19_CATCTGGCTATC_1 GSM4557327_555_1       1145          425
+GSM4557327_555_1.33_TAACGCAAACCC_1 GSM4557327_555_1       2485          468
+GSM4557327_555_1.47_ACGCTCACTCAA_1 GSM4557327_555_1       1169          438
+GSM4557327_555_1.49_TACCCTAATAAA_1 GSM4557327_555_1       1050          466
+GSM4557327_555_1.62_AGACCCTTCATT_1 GSM4557327_555_1       1024          488
+GSM4557327_555_1.65_TTCTCTGTCTGG_1 GSM4557327_555_1       1282          495
+                                   percent.mt percent.rps percent.rpl
+GSM4557327_555_1.19_CATCTGGCTATC_1   3.225806   1.3077594   1.3949433
+GSM4557327_555_1.33_TAACGCAAACCC_1  13.689281   0.5620233   0.8028904
+GSM4557327_555_1.47_ACGCTCACTCAA_1   5.822785   1.4345992   1.7721519
+GSM4557327_555_1.49_TACCCTAATAAA_1   6.654171   1.4995314   1.9681350
+GSM4557327_555_1.62_AGACCCTTCATT_1   3.581801   1.5488867   1.7424976
+GSM4557327_555_1.65_TTCTCTGTCTGG_1  13.110939   1.5515904   1.3964313
+                                   percent.rrna nCount_SCT nFeature_SCT
+GSM4557327_555_1.19_CATCTGGCTATC_1     29.55536       1408          425
+GSM4557327_555_1.33_TAACGCAAACCC_1     59.45403       1829          457
+GSM4557327_555_1.47_ACGCTCACTCAA_1     48.43882       1451          437
+GSM4557327_555_1.49_TACCCTAATAAA_1     35.70759       1402          466
+GSM4557327_555_1.62_AGACCCTTCATT_1     35.52759       1361          487
+GSM4557327_555_1.65_TTCTCTGTCTGG_1     38.47944       1472          495
+                                   SCT_snn_res.1 seurat_clusters Donor.orig
+GSM4557327_555_1.19_CATCTGGCTATC_1            15              15        555
+GSM4557327_555_1.33_TAACGCAAACCC_1             3               3        555
+GSM4557327_555_1.47_ACGCTCACTCAA_1             0               0        555
+GSM4557327_555_1.49_TACCCTAATAAA_1             0               0        555
+GSM4557327_555_1.62_AGACCCTTCATT_1             0               0        555
+GSM4557327_555_1.65_TTCTCTGTCTGG_1            12              12        555
+                                   Donor.full Donor Status DPS DTF Admission
+GSM4557327_555_1.19_CATCTGGCTATC_1       C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.33_TAACGCAAACCC_1       C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.47_ACGCTCACTCAA_1       C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.49_TACCCTAATAAA_1       C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.62_AGACCCTTCATT_1       C1 A    C1  COVID   9   9       ICU
+GSM4557327_555_1.65_TTCTCTGTCTGG_1       C1 A    C1  COVID   9   9       ICU
+                                   Ventilated clinical.outcome pruned.labels
+GSM4557327_555_1.19_CATCTGGCTATC_1    NonVent       Discharged            BM
+GSM4557327_555_1.33_TAACGCAAACCC_1    NonVent       Discharged    HSC_-G-CSF
+GSM4557327_555_1.47_ACGCTCACTCAA_1    NonVent       Discharged       T_cells
+GSM4557327_555_1.49_TACCCTAATAAA_1    NonVent       Discharged    HSC_-G-CSF
+GSM4557327_555_1.62_AGACCCTTCATT_1    NonVent       Discharged    HSC_-G-CSF
+GSM4557327_555_1.65_TTCTCTGTCTGG_1    NonVent       Discharged    HSC_-G-CSF
+                                   predicted.celltype.l1.score
+GSM4557327_555_1.19_CATCTGGCTATC_1                   0.9896699
+GSM4557327_555_1.33_TAACGCAAACCC_1                   0.4731185
+GSM4557327_555_1.47_ACGCTCACTCAA_1                   0.7591404
+GSM4557327_555_1.49_TACCCTAATAAA_1                   0.8381181
+GSM4557327_555_1.62_AGACCCTTCATT_1                   0.5673249
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                   0.9082135
+                                   predicted.celltype.l1
+GSM4557327_555_1.19_CATCTGGCTATC_1                 other
+GSM4557327_555_1.33_TAACGCAAACCC_1                  Mono
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 CD8 T
+GSM4557327_555_1.49_TACCCTAATAAA_1                  Mono
+GSM4557327_555_1.62_AGACCCTTCATT_1                  Mono
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                  Mono
+                                   predicted.celltype.l2.score
+GSM4557327_555_1.19_CATCTGGCTATC_1                   0.9618464
+GSM4557327_555_1.33_TAACGCAAACCC_1                   0.4722181
+GSM4557327_555_1.47_ACGCTCACTCAA_1                   0.2656793
+GSM4557327_555_1.49_TACCCTAATAAA_1                   0.8371866
+GSM4557327_555_1.62_AGACCCTTCATT_1                   0.5673249
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                   0.9082135
+                                   predicted.celltype.l2   celltype seq_folder
+GSM4557327_555_1.19_CATCTGGCTATC_1                 Eryth         BM       <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1             CD14 Mono HSC_-G-CSF       <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1               CD8 TEM      CD8 T       <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1             CD14 Mono HSC_-G-CSF       <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1             CD14 Mono HSC_-G-CSF       <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1             CD14 Mono HSC_-G-CSF       <NA>
+                                   nUMI nGene log10GenesPerUMI mitoRatio cells
+GSM4557327_555_1.19_CATCTGGCTATC_1   NA    NA               NA        NA  <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1   NA    NA               NA        NA  <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1   NA    NA               NA        NA  <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1   NA    NA               NA        NA  <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1   NA    NA               NA        NA  <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1   NA    NA               NA        NA  <NA>
+                                   sample nReads_RNA nReads_ALL percent.mito
+GSM4557327_555_1.19_CATCTGGCTATC_1   <NA>         NA         NA           NA
+GSM4557327_555_1.33_TAACGCAAACCC_1   <NA>         NA         NA           NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1   <NA>         NA         NA           NA
+GSM4557327_555_1.49_TACCCTAATAAA_1   <NA>         NA         NA           NA
+GSM4557327_555_1.62_AGACCCTTCATT_1   <NA>         NA         NA           NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1   <NA>         NA         NA           NA
+                                   percent.hb donor onset_of_symptoms
+GSM4557327_555_1.19_CATCTGGCTATC_1         NA  <NA>              <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1         NA  <NA>              <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1         NA  <NA>              <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1         NA  <NA>              <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1         NA  <NA>              <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1         NA  <NA>              <NA>
+                                   days_after_onset sampleID origID
+GSM4557327_555_1.19_CATCTGGCTATC_1               NA     <NA>   <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1               NA     <NA>   <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1               NA     <NA>   <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1               NA     <NA>   <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1               NA     <NA>   <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1               NA     <NA>   <NA>
+                                   date_of_sampling DaysAfterSample0 experiment
+GSM4557327_555_1.19_CATCTGGCTATC_1             <NA>               NA       <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1             <NA>               NA       <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1             <NA>               NA       <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1             <NA>               NA       <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1             <NA>               NA       <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1             <NA>               NA       <NA>
+                                   PoolID sampletag hash.ID platform
+GSM4557327_555_1.19_CATCTGGCTATC_1   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1   <NA>      <NA>    <NA>     <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1   <NA>      <NA>    <NA>     <NA>
+                                   purification  age  sex group_per_sample
+GSM4557327_555_1.19_CATCTGGCTATC_1         <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1         <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1         <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1         <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1         <NA> <NA> <NA>             <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1         <NA> <NA> <NA>             <NA>
+                                   who_per_sample disease_stage outcome
+GSM4557327_555_1.19_CATCTGGCTATC_1             NA          <NA>    <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1             NA          <NA>    <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1             NA          <NA>    <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1             NA          <NA>    <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1             NA          <NA>    <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1             NA          <NA>    <NA>
+                                   comorbidities
+GSM4557327_555_1.19_CATCTGGCTATC_1          <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1          <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1          <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1          <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1          <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1          <NA>
+                                   COVID.19.related_medication_and_anti.microbials
+GSM4557327_555_1.19_CATCTGGCTATC_1                                            <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                                            <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                                            <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                                            <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                                            <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                                            <NA>
+                                   RNA_snn_res.0.4 cluster_labels_res.0.4
+GSM4557327_555_1.19_CATCTGGCTATC_1            <NA>                   <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1            <NA>                   <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1            <NA>                   <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1            <NA>                   <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1            <NA>                   <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1            <NA>                   <NA>
+                                   new.order id.celltype hpca.labels
+GSM4557327_555_1.19_CATCTGGCTATC_1      <NA>        <NA>        <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1      <NA>        <NA>        <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1      <NA>        <NA>        <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1      <NA>        <NA>        <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1      <NA>        <NA>        <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1      <NA>        <NA>        <NA>
+                                   blueprint.labels monaco.labels immune.labels
+GSM4557327_555_1.19_CATCTGGCTATC_1             <NA>          <NA>          <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1             <NA>          <NA>          <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1             <NA>          <NA>          <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1             <NA>          <NA>          <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1             <NA>          <NA>          <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1             <NA>          <NA>          <NA>
+                                   dmap.labels hemato.labels nCount_HTOsPool1
+GSM4557327_555_1.19_CATCTGGCTATC_1        <NA>          <NA>               NA
+GSM4557327_555_1.33_TAACGCAAACCC_1        <NA>          <NA>               NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1        <NA>          <NA>               NA
+GSM4557327_555_1.49_TACCCTAATAAA_1        <NA>          <NA>               NA
+GSM4557327_555_1.62_AGACCCTTCATT_1        <NA>          <NA>               NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1        <NA>          <NA>               NA
+                                   nFeature_HTOsPool1 nCount_HTOsPool2
+GSM4557327_555_1.19_CATCTGGCTATC_1                 NA               NA
+GSM4557327_555_1.33_TAACGCAAACCC_1                 NA               NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 NA               NA
+GSM4557327_555_1.49_TACCCTAATAAA_1                 NA               NA
+GSM4557327_555_1.62_AGACCCTTCATT_1                 NA               NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                 NA               NA
+                                   nFeature_HTOsPool2 nCount_HTOsPool3
+GSM4557327_555_1.19_CATCTGGCTATC_1                 NA               NA
+GSM4557327_555_1.33_TAACGCAAACCC_1                 NA               NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 NA               NA
+GSM4557327_555_1.49_TACCCTAATAAA_1                 NA               NA
+GSM4557327_555_1.62_AGACCCTTCATT_1                 NA               NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                 NA               NA
+                                   nFeature_HTOsPool3 nCount_HTOsPool4
+GSM4557327_555_1.19_CATCTGGCTATC_1                 NA               NA
+GSM4557327_555_1.33_TAACGCAAACCC_1                 NA               NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 NA               NA
+GSM4557327_555_1.49_TACCCTAATAAA_1                 NA               NA
+GSM4557327_555_1.62_AGACCCTTCATT_1                 NA               NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                 NA               NA
+                                   nFeature_HTOsPool4 nCount_HTOsPool5
+GSM4557327_555_1.19_CATCTGGCTATC_1                 NA               NA
+GSM4557327_555_1.33_TAACGCAAACCC_1                 NA               NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 NA               NA
+GSM4557327_555_1.49_TACCCTAATAAA_1                 NA               NA
+GSM4557327_555_1.62_AGACCCTTCATT_1                 NA               NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                 NA               NA
+                                   nFeature_HTOsPool5 nCount_HTOsPool6
+GSM4557327_555_1.19_CATCTGGCTATC_1                 NA               NA
+GSM4557327_555_1.33_TAACGCAAACCC_1                 NA               NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 NA               NA
+GSM4557327_555_1.49_TACCCTAATAAA_1                 NA               NA
+GSM4557327_555_1.62_AGACCCTTCATT_1                 NA               NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                 NA               NA
+                                   nFeature_HTOsPool6 RNA_snn_res.1 Disease
+GSM4557327_555_1.19_CATCTGGCTATC_1                 NA          <NA>    <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                 NA          <NA>    <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                 NA          <NA>    <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                 NA          <NA>    <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                 NA          <NA>    <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                 NA          <NA>    <NA>
+                                   Disease_group  Sex  Age majortype batch
+GSM4557327_555_1.19_CATCTGGCTATC_1          <NA> <NA> <NA>      <NA>  <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1          <NA> <NA> <NA>      <NA>  <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1          <NA> <NA> <NA>      <NA>  <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1          <NA> <NA> <NA>      <NA>  <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1          <NA> <NA> <NA>      <NA>  <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1          <NA> <NA> <NA>      <NA>  <NA>
+                                   tissue dsm_severity_score_group assay
+GSM4557327_555_1.19_CATCTGGCTATC_1   <NA>                     <NA>  <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1   <NA>                     <NA>  <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1   <NA>                     <NA>  <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1   <NA>                     <NA>  <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1   <NA>                     <NA>  <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1   <NA>                     <NA>  <NA>
+                                   ethnicity disease disease_ontology_term_id
+GSM4557327_555_1.19_CATCTGGCTATC_1      <NA>    <NA>                     <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1      <NA>    <NA>                     <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1      <NA>    <NA>                     <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1      <NA>    <NA>                     <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1      <NA>    <NA>                     <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1      <NA>    <NA>                     <NA>
+                                   assay_ontology_term_id severity
+GSM4557327_555_1.19_CATCTGGCTATC_1                   <NA>     <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                   <NA>     <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                   <NA>     <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                   <NA>     <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                   <NA>     <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                   <NA>     <NA>
+                                   tissue_ontology_term_id timepoint
+GSM4557327_555_1.19_CATCTGGCTATC_1                    <NA>      <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                    <NA>      <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                    <NA>      <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                    <NA>      <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                    <NA>      <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                    <NA>      <NA>
+                                   dsm_severity_score days_since_hospitalized
+GSM4557327_555_1.19_CATCTGGCTATC_1               <NA>                    <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1               <NA>                    <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1               <NA>                    <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1               <NA>                    <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1               <NA>                    <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1               <NA>                    <NA>
+                                   development_stage_ontology_term_id
+GSM4557327_555_1.19_CATCTGGCTATC_1                               <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                               <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                               <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                               <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                               <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                               <NA>
+                                   ethnicity_ontology_term_id days_since_onset
+GSM4557327_555_1.19_CATCTGGCTATC_1                       <NA>             <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                       <NA>             <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                       <NA>             <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                       <NA>             <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                       <NA>             <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                       <NA>             <NA>
+                                   cell_type_ontology_term_id development_stage
+GSM4557327_555_1.19_CATCTGGCTATC_1                       <NA>              <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                       <NA>              <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                       <NA>              <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                       <NA>              <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                       <NA>              <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                       <NA>              <NA>
+                                   cell_type ever_admitted_to_icu material_type
+GSM4557327_555_1.19_CATCTGGCTATC_1      <NA>                 <NA>          <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1      <NA>                 <NA>          <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1      <NA>                 <NA>          <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1      <NA>                 <NA>          <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1      <NA>                 <NA>          <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1      <NA>                 <NA>          <NA>
+                                   nCount_raw nFeature_raw sample_id n_genes
+GSM4557327_555_1.19_CATCTGGCTATC_1         NA           NA      <NA>      NA
+GSM4557327_555_1.33_TAACGCAAACCC_1         NA           NA      <NA>      NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1         NA           NA      <NA>      NA
+GSM4557327_555_1.49_TACCCTAATAAA_1         NA           NA      <NA>      NA
+GSM4557327_555_1.62_AGACCCTTCATT_1         NA           NA      <NA>      NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1         NA           NA      <NA>      NA
+                                   n_genes_by_counts total_counts
+GSM4557327_555_1.19_CATCTGGCTATC_1                NA           NA
+GSM4557327_555_1.33_TAACGCAAACCC_1                NA           NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1                NA           NA
+GSM4557327_555_1.49_TACCCTAATAAA_1                NA           NA
+GSM4557327_555_1.62_AGACCCTTCATT_1                NA           NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                NA           NA
+                                   total_counts_mt pct_counts_mt
+GSM4557327_555_1.19_CATCTGGCTATC_1              NA            NA
+GSM4557327_555_1.33_TAACGCAAACCC_1              NA            NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1              NA            NA
+GSM4557327_555_1.49_TACCCTAATAAA_1              NA            NA
+GSM4557327_555_1.62_AGACCCTTCATT_1              NA            NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1              NA            NA
+                                   full_clustering initial_clustering Resample
+GSM4557327_555_1.19_CATCTGGCTATC_1            <NA>               <NA>     <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1            <NA>               <NA>     <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1            <NA>               <NA>     <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1            <NA>               <NA>     <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1            <NA>               <NA>     <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1            <NA>               <NA>     <NA>
+                                   Collection_Day Age_interval Swab_result
+GSM4557327_555_1.19_CATCTGGCTATC_1           <NA>         <NA>        <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1           <NA>         <NA>        <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1           <NA>         <NA>        <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1           <NA>         <NA>        <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1           <NA>         <NA>        <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1           <NA>         <NA>        <NA>
+                                   Smoker Status_on_day_collection
+GSM4557327_555_1.19_CATCTGGCTATC_1   <NA>                     <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1   <NA>                     <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1   <NA>                     <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1   <NA>                     <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1   <NA>                     <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1   <NA>                     <NA>
+                                   Status_on_day_collection_summary
+GSM4557327_555_1.19_CATCTGGCTATC_1                             <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                             <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                             <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                             <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                             <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                             <NA>
+                                   Days_from_onset Site time_after_LPS
+GSM4557327_555_1.19_CATCTGGCTATC_1            <NA> <NA>           <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1            <NA> <NA>           <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1            <NA> <NA>           <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1            <NA> <NA>           <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1            <NA> <NA>           <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1            <NA> <NA>           <NA>
+                                   Worst_Clinical_Status Outcome patient_id
+GSM4557327_555_1.19_CATCTGGCTATC_1                  <NA>    <NA>       <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                  <NA>    <NA>       <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                  <NA>    <NA>       <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                  <NA>    <NA>       <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                  <NA>    <NA>       <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                  <NA>    <NA>       <NA>
+                                   Patient cell_types Timepoint Pseudotime_name
+GSM4557327_555_1.19_CATCTGGCTATC_1    <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1    <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1    <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1    <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1    <NA>       <NA>      <NA>            <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1    <NA>       <NA>      <NA>            <NA>
+                                   Pseudotime cell_of_interes class V323 V330
+GSM4557327_555_1.19_CATCTGGCTATC_1       <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1       <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1       <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1       <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1       <NA>            <NA>  <NA> <NA> <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1       <NA>            <NA>  <NA> <NA> <NA>
+                                   RNA_snn_res.0.2 cell_types2 Celltype
+GSM4557327_555_1.19_CATCTGGCTATC_1            <NA>        <NA>     <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1            <NA>        <NA>     <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1            <NA>        <NA>     <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1            <NA>        <NA>     <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1            <NA>        <NA>     <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1            <NA>        <NA>     <NA>
+                                   RNA_snn_res.0.1 nCount_integrated
+GSM4557327_555_1.19_CATCTGGCTATC_1            <NA>                NA
+GSM4557327_555_1.33_TAACGCAAACCC_1            <NA>                NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1            <NA>                NA
+GSM4557327_555_1.49_TACCCTAATAAA_1            <NA>                NA
+GSM4557327_555_1.62_AGACCCTTCATT_1            <NA>                NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1            <NA>                NA
+                                   nFeature_integrated Gender ICU_vs_FLOOR
+GSM4557327_555_1.19_CATCTGGCTATC_1                  NA   <NA>         <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1                  NA   <NA>         <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1                  NA   <NA>         <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1                  NA   <NA>         <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1                  NA   <NA>         <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1                  NA   <NA>         <NA>
+                                   Qualitative_score covid_status S.Score
+GSM4557327_555_1.19_CATCTGGCTATC_1              <NA>         <NA>      NA
+GSM4557327_555_1.33_TAACGCAAACCC_1              <NA>         <NA>      NA
+GSM4557327_555_1.47_ACGCTCACTCAA_1              <NA>         <NA>      NA
+GSM4557327_555_1.49_TACCCTAATAAA_1              <NA>         <NA>      NA
+GSM4557327_555_1.62_AGACCCTTCATT_1              <NA>         <NA>      NA
+GSM4557327_555_1.65_TTCTCTGTCTGG_1              <NA>         <NA>      NA
+                                   G2M.Score Phase integrated_snn_res.1.2
+GSM4557327_555_1.19_CATCTGGCTATC_1        NA  <NA>                   <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1        NA  <NA>                   <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1        NA  <NA>                   <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1        NA  <NA>                   <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1        NA  <NA>                   <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1        NA  <NA>                   <NA>
+                                   condition sample_type time
+GSM4557327_555_1.19_CATCTGGCTATC_1      <NA>        <NA> <NA>
+GSM4557327_555_1.33_TAACGCAAACCC_1      <NA>        <NA> <NA>
+GSM4557327_555_1.47_ACGCTCACTCAA_1      <NA>        <NA> <NA>
+GSM4557327_555_1.49_TACCCTAATAAA_1      <NA>        <NA> <NA>
+GSM4557327_555_1.62_AGACCCTTCATT_1      <NA>        <NA> <NA>
+GSM4557327_555_1.65_TTCTCTGTCTGG_1      <NA>        <NA> <NA>
+[1] 281622     18
+                       pruned.labels
+3_AACCATGTCGAGAAGC-1_3       T_cells
+3_AAGATAGAGCCGATAG-1_3       T_cells
+3_AAGCATCCATCACAGT-1_3    HSC_-G-CSF
+3_AAGCGAGTCTCGTGAA-1_3       T_cells
+3_AAGGTAAGTAGAGACC-1_3     Platelets
+3_ACTTCGCCAGCTTCGG-1_3    HSC_-G-CSF
+
+        BM        CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+       558        382       1305        140       8797      11363 
+                       RN7SK      A1BG A1BG-AS1 A1CF A2M  A2M-AS1 A2ML1 A4GALT
+3_AACCATGTCGAGAAGC-1_3     0 1.7603783        0    0   0 0.000000     0      0
+3_AAGATAGAGCCGATAG-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_AAGCATCCATCACAGT-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_AAGCGAGTCTCGTGAA-1_3     0 0.0000000        0    0   0 1.055116     0      0
+3_AAGGTAAGTAGAGACC-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_ACTTCGCCAGCTTCGG-1_3     0 0.0000000        0    0   0 1.116252     0      0
+3_AGGATCTTCGAGAATA-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_AGGTCATCAGAAATTG-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_ATACCTTTCCTTCGAC-1_3     0 0.8850822        0    0   0 0.000000     0      0
+3_ATCACGATCCTTCGAC-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_ATTACCTTCGACCTAA-1_3     0 0.3340669        0    0   0 0.000000     0      0
+3_ATTCATCTCATGCTAG-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_CAACAGTAGCATATGA-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_CAATACGTCGCCCAGA-1_3     0 0.0000000        0    0   0 0.000000     0      0
+3_CACACAAAGAGGATCC-1_3     0 0.7654464        0    0   0 0.000000     0      0
+                            AAAS AACS AADAC AADACL3 AADAT    PRXL2C AAGAB
+3_AACCATGTCGAGAAGC-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_AAGATAGAGCCGATAG-1_3 0.6602514    0     0       0     0 0.0000000     0
+3_AAGCATCCATCACAGT-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_AAGCGAGTCTCGTGAA-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_AAGGTAAGTAGAGACC-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_ACTTCGCCAGCTTCGG-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_AGGATCTTCGAGAATA-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_AGGTCATCAGAAATTG-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_ATACCTTTCCTTCGAC-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_ATCACGATCCTTCGAC-1_3 1.1785685    0     0       0     0 0.0000000     0
+3_ATTACCTTCGACCTAA-1_3 0.0000000    0     0       0     0 0.3340669     0
+3_ATTCATCTCATGCTAG-1_3 0.9692087    0     0       0     0 0.9692087     0
+3_CAACAGTAGCATATGA-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_CAATACGTCGCCCAGA-1_3 0.0000000    0     0       0     0 0.0000000     0
+3_CACACAAAGAGGATCC-1_3 0.0000000    0     0       0     0 0.0000000     0
+                Row.names  cell_type RN7SK      A1BG A1BG-AS1 A1CF A2M  A2M-AS1
+1  3_AACCATGTCGAGAAGC-1_3    T_cells     0 1.7603783        0    0   0 0.000000
+2  3_AAGATAGAGCCGATAG-1_3    T_cells     0 0.0000000        0    0   0 0.000000
+3  3_AAGCATCCATCACAGT-1_3 HSC_-G-CSF     0 0.0000000        0    0   0 0.000000
+4  3_AAGCGAGTCTCGTGAA-1_3    T_cells     0 0.0000000        0    0   0 1.055116
+5  3_AAGGTAAGTAGAGACC-1_3  Platelets     0 0.0000000        0    0   0 0.000000
+6  3_ACTTCGCCAGCTTCGG-1_3 HSC_-G-CSF     0 0.0000000        0    0   0 1.116252
+7  3_AGGATCTTCGAGAATA-1_3 HSC_-G-CSF     0 0.0000000        0    0   0 0.000000
+8  3_AGGTCATCAGAAATTG-1_3 HSC_-G-CSF     0 0.0000000        0    0   0 0.000000
+9  3_ATACCTTTCCTTCGAC-1_3 HSC_-G-CSF     0 0.8850822        0    0   0 0.000000
+10 3_ATCACGATCCTTCGAC-1_3    T_cells     0 0.0000000        0    0   0 0.000000
+11 3_ATTACCTTCGACCTAA-1_3 HSC_-G-CSF     0 0.3340669        0    0   0 0.000000
+12 3_ATTCATCTCATGCTAG-1_3 HSC_-G-CSF     0 0.0000000        0    0   0 0.000000
+13 3_CAACAGTAGCATATGA-1_3    T_cells     0 0.0000000        0    0   0 0.000000
+14 3_CAATACGTCGCCCAGA-1_3    T_cells     0 0.0000000        0    0   0 0.000000
+15 3_CACACAAAGAGGATCC-1_3    T_cells     0 0.7654464        0    0   0 0.000000
+   A2ML1 A4GALT      AAAS AACS AADAC AADACL3 AADAT
+1      0      0 0.0000000    0     0       0     0
+2      0      0 0.6602514    0     0       0     0
+3      0      0 0.0000000    0     0       0     0
+4      0      0 0.0000000    0     0       0     0
+5      0      0 0.0000000    0     0       0     0
+6      0      0 0.0000000    0     0       0     0
+7      0      0 0.0000000    0     0       0     0
+8      0      0 0.0000000    0     0       0     0
+9      0      0 0.0000000    0     0       0     0
+10     0      0 1.1785685    0     0       0     0
+11     0      0 0.0000000    0     0       0     0
+12     0      0 0.9692087    0     0       0     0
+13     0      0 0.0000000    0     0       0     0
+14     0      0 0.0000000    0     0       0     0
+15     0      0 0.0000000    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 6283    7
+[1] 9.010756
+[1] 5077    7
+[1] 3.010255
+                                     pruned.labels
+Bcells_Coc004TC_ACATCAGTCGGAATCT-1_9       T_cells
+Bcells_Coc004TC_CAACCTCTCGCAGGCT-1_9    HSC_-G-CSF
+Bcells_Coc004TC_GCATGTACAGACGCTC-1_9    HSC_-G-CSF
+Bcells_Coc004TC_TACGGGCCACGGTGTC-1_9    HSC_-G-CSF
+Bcells_Ki001TA2_CAGTAACTCCCAGGTG-1_9       T_cells
+Bcells_Ki001TA2_CAGTCCTGTCGAATCT-1_9       T_cells
+
+        BM        CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+        23        811        742         55       2907         44 
+                                     RN7SK      A1BG A1BG-AS1 A1CF A2M A2M-AS1
+Bcells_Coc004TC_ACATCAGTCGGAATCT-1_9     0 0.0000000        0    0   0       0
+Bcells_Coc004TC_CAACCTCTCGCAGGCT-1_9     0 0.0000000        0    0   0       0
+Bcells_Coc004TC_GCATGTACAGACGCTC-1_9     0 0.0000000        0    0   0       0
+Bcells_Coc004TC_TACGGGCCACGGTGTC-1_9     0 0.0000000        0    0   0       0
+Bcells_Ki001TA2_CAGTAACTCCCAGGTG-1_9     0 0.0000000        0    0   0       0
+Bcells_Ki001TA2_CAGTCCTGTCGAATCT-1_9     0 0.0000000        0    0   0       0
+Bcells_Ki001TA2_TTCGAAGCAGAGTGTG-1_9     0 0.0000000        0    0   0       0
+Bcells_Ki001TB_ACCTTTACATCTGGTA-1_9      0 0.0000000        0    0   0       0
+Bcells_Ki001TB_TCCCGATTCAGTTCGA-1_9      0 0.0000000        0    0   0       0
+Bcells_Ki001TC_GTCCTCATCTACGAGT-1_9      0 0.0000000        0    0   0       0
+Bcells_Ki005TB_CCATGTCAGAGCTATA-1_9      0 0.0000000        0    0   0       0
+Bcells_Ki005TB_GCTGCAGGTCTAGGTT-1_9      0 0.8030261        0    0   0       0
+Bcells_Ki005TB_GTTCATTCATCACGTA-1_9      0 0.0000000        0    0   0       0
+Bcells_Ki005TB_TACAGTGTCGACCAGC-1_9      0 0.0000000        0    0   0       0
+Bcells_Ki005TB_TGCGCAGTCGCCTGAG-1_9      0 0.0000000        0    0   0       0
+                                     A2ML1 A4GALT      AAAS AACS AADAC AADACL3
+Bcells_Coc004TC_ACATCAGTCGGAATCT-1_9     0      0 0.0000000    0     0       0
+Bcells_Coc004TC_CAACCTCTCGCAGGCT-1_9     0      0 0.0000000    0     0       0
+Bcells_Coc004TC_GCATGTACAGACGCTC-1_9     0      0 0.0000000    0     0       0
+Bcells_Coc004TC_TACGGGCCACGGTGTC-1_9     0      0 0.0000000    0     0       0
+Bcells_Ki001TA2_CAGTAACTCCCAGGTG-1_9     0      0 0.0000000    0     0       0
+Bcells_Ki001TA2_CAGTCCTGTCGAATCT-1_9     0      0 0.0000000    0     0       0
+Bcells_Ki001TA2_TTCGAAGCAGAGTGTG-1_9     0      0 0.0000000    0     0       0
+Bcells_Ki001TB_ACCTTTACATCTGGTA-1_9      0      0 0.0000000    0     0       0
+Bcells_Ki001TB_TCCCGATTCAGTTCGA-1_9      0      0 0.0000000    0     0       0
+Bcells_Ki001TC_GTCCTCATCTACGAGT-1_9      0      0 0.0000000    0     0       0
+Bcells_Ki005TB_CCATGTCAGAGCTATA-1_9      0      0 0.0000000    0     0       0
+Bcells_Ki005TB_GCTGCAGGTCTAGGTT-1_9      0      0 0.8030261    0     0       0
+Bcells_Ki005TB_GTTCATTCATCACGTA-1_9      0      0 0.0000000    0     0       0
+Bcells_Ki005TB_TACAGTGTCGACCAGC-1_9      0      0 0.0000000    0     0       0
+Bcells_Ki005TB_TGCGCAGTCGCCTGAG-1_9      0      0 0.0000000    0     0       0
+                                     AADAT PRXL2C     AAGAB
+Bcells_Coc004TC_ACATCAGTCGGAATCT-1_9     0      0 0.0000000
+Bcells_Coc004TC_CAACCTCTCGCAGGCT-1_9     0      0 0.0000000
+Bcells_Coc004TC_GCATGTACAGACGCTC-1_9     0      0 0.0000000
+Bcells_Coc004TC_TACGGGCCACGGTGTC-1_9     0      0 0.0000000
+Bcells_Ki001TA2_CAGTAACTCCCAGGTG-1_9     0      0 0.0000000
+Bcells_Ki001TA2_CAGTCCTGTCGAATCT-1_9     0      0 0.0000000
+Bcells_Ki001TA2_TTCGAAGCAGAGTGTG-1_9     0      0 0.0000000
+Bcells_Ki001TB_ACCTTTACATCTGGTA-1_9      0      0 0.0000000
+Bcells_Ki001TB_TCCCGATTCAGTTCGA-1_9      0      0 0.0000000
+Bcells_Ki001TC_GTCCTCATCTACGAGT-1_9      0      0 0.0000000
+Bcells_Ki005TB_CCATGTCAGAGCTATA-1_9      0      0 0.0000000
+Bcells_Ki005TB_GCTGCAGGTCTAGGTT-1_9      0      0 0.0000000
+Bcells_Ki005TB_GTTCATTCATCACGTA-1_9      0      0 0.7437807
+Bcells_Ki005TB_TACAGTGTCGACCAGC-1_9      0      0 0.0000000
+Bcells_Ki005TB_TGCGCAGTCGCCTGAG-1_9      0      0 0.0000000
+                              Row.names  cell_type RN7SK     A1BG A1BG-AS1 A1CF
+1  Bcells_Coc003TA_ACGCAGCCAGGTCTCG-1_9    T_cells     0 0.000000        0    0
+2  Bcells_Coc003TA_CAACTAGGTCTAGCGC-1_9    T_cells     0 0.000000        0    0
+3  Bcells_Coc003TA_CCACGGAAGCCCAATT-1_9    T_cells     0 0.000000        0    0
+4  Bcells_Coc003TA_CCTATTATCATCGGAT-1_9    T_cells     0 0.000000        0    0
+5  Bcells_Coc003TA_CGAGAAGAGTTTGCGT-1_9    T_cells     0 0.000000        0    0
+6  Bcells_Coc003TB_CATTCGCCAGGTCGTC-1_9    T_cells     0 1.137111        0    0
+7  Bcells_Coc003TB_TGGCTGGGTGATGATA-1_9    T_cells     0 1.807984        0    0
+8  Bcells_Coc004TC_ACATCAGTCGGAATCT-1_9    T_cells     0 0.000000        0    0
+9  Bcells_Coc004TC_CAACCTCTCGCAGGCT-1_9 HSC_-G-CSF     0 0.000000        0    0
+10 Bcells_Coc004TC_GACACGCCAATTGCTG-1_9    T_cells     0 0.000000        0    0
+11 Bcells_Coc004TC_GCATGTACAGACGCTC-1_9 HSC_-G-CSF     0 0.000000        0    0
+12 Bcells_Coc004TC_TACGGGCCACGGTGTC-1_9 HSC_-G-CSF     0 0.000000        0    0
+13 Bcells_Coc004TC_TGACTAGAGCTTATCG-1_9  Platelets     0 0.000000        0    0
+14 Bcells_Coc011TA_GGCTCGATCTTCGGTC-1_9 HSC_-G-CSF     0 0.000000        0    0
+15 Bcells_Coc022TA_AAAGATGAGACTTTCG-1_9  Platelets     0 0.000000        0    0
+   A2M A2M-AS1 A2ML1 A4GALT     AAAS AACS AADAC AADACL3 AADAT
+1    0       0     0      0 0.000000    0     0       0     0
+2    0       0     0      0 0.000000    0     0       0     0
+3    0       0     0      0 1.056338    0     0       0     0
+4    0       0     0      0 0.000000    0     0       0     0
+5    0       0     0      0 0.000000    0     0       0     0
+6    0       0     0      0 0.000000    0     0       0     0
+7    0       0     0      0 0.000000    0     0       0     0
+8    0       0     0      0 0.000000    0     0       0     0
+9    0       0     0      0 0.000000    0     0       0     0
+10   0       0     0      0 0.000000    0     0       0     0
+11   0       0     0      0 0.000000    0     0       0     0
+12   0       0     0      0 0.000000    0     0       0     0
+13   0       0     0      0 0.000000    0     0       0     0
+14   0       0     0      0 0.000000    0     0       0     0
+15   0       0     0      0 0.000000    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 2834    7
+[1] 8.122693
+[1] 2491    7
+[1] 2.397079
+                     pruned.labels
+AAACCCACACAATGCT-5_2       T_cells
+AAACCCATCGGTAAGG-5_2       T_cells
+AAACGAAGTCGCATGC-5_2       T_cells
+AAAGGGCCAGCAGATG-5_2       T_cells
+AAAGGGCGTTGAAGTA-5_2       T_cells
+AAAGGGCTCACCGCTT-5_2       T_cells
+
+        BM        CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+        14        274       1694         19       2450      56570 
+                     RN7SK     A1BG A1BG-AS1 A1CF A2M   A2M-AS1 A2ML1 A4GALT
+AAACCCACACAATGCT-5_2     0 0.000000        0    0   0 0.8687342     0      0
+AAACCCATCGGTAAGG-5_2     0 0.000000        0    0   0 1.6549473     0      0
+AAACGAAGTCGCATGC-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AAAGGGCCAGCAGATG-5_2     0 0.000000        0    0   0 1.1260113     0      0
+AAAGGGCGTTGAAGTA-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AAAGGGCTCACCGCTT-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AAAGGTATCGCCTTTG-5_2     0 0.000000        0    0   0 1.3651479     0      0
+AAAGTCCCAACACGAG-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AAAGTCCCAACGGCCT-5_2     0 1.002261        0    0   0 0.0000000     0      0
+AAAGTCCTCTGGTGCG-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AAAGTGAAGAGATTCA-5_2     0 0.000000        0    0   0 1.0424687     0      0
+AAATGGAGTAGACAAT-5_2     0 0.000000        0    0   0 1.0026980     0      0
+AAATGGATCCTATGGA-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AACAACCTCCATGAGT-5_2     0 0.000000        0    0   0 0.0000000     0      0
+AACAACCTCTAGCCTC-5_2     0 0.000000        0    0   0 0.6330331     0      0
+                     AAAS AACS AADAC AADACL3 AADAT    PRXL2C     AAGAB
+AAACCCACACAATGCT-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAACCCATCGGTAAGG-5_2    0    0     0       0     0 0.0000000 1.1366792
+AAACGAAGTCGCATGC-5_2    0    0     0       0     0 1.2835979 0.0000000
+AAAGGGCCAGCAGATG-5_2    0    0     0       0     0 1.1260113 0.0000000
+AAAGGGCGTTGAAGTA-5_2    0    0     0       0     0 1.6290838 0.0000000
+AAAGGGCTCACCGCTT-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAAGGTATCGCCTTTG-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAAGTCCCAACACGAG-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAAGTCCCAACGGCCT-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAAGTCCTCTGGTGCG-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAAGTGAAGAGATTCA-5_2    0    0     0       0     0 0.6513377 0.0000000
+AAATGGAGTAGACAAT-5_2    0    0     0       0     0 0.0000000 0.0000000
+AAATGGATCCTATGGA-5_2    0    0     0       0     0 0.9961889 0.0000000
+AACAACCTCCATGAGT-5_2    0    0     0       0     0 0.9690057 0.0000000
+AACAACCTCTAGCCTC-5_2    0    0     0       0     0 0.3657932 0.6330331
+                        Row.names cell_type RN7SK     A1BG A1BG-AS1 A1CF A2M
+1            AAACCCAAGCGCCCAT_3_3   T_cells     0 1.717089        0    0   0
+2            AAACCCACACAATGCT-5_2   T_cells     0 0.000000        0    0   0
+3            AAACCCATCGGTAAGG-5_2   T_cells     0 0.000000        0    0   0
+4            AAACCCATCTGGCCGA_3_3   T_cells     0 1.055605        0    0   0
+5  AAACCTGAGACTTTCG-newcastle74_7   T_cells     0 0.000000        0    0   0
+6    AAACCTGAGATCACGG-MH8919179_7   T_cells     0 0.000000        0    0   0
+7         AAACCTGAGATCGGGT-23_5_6   T_cells     0 0.000000        0    0   0
+8    AAACCTGAGCAGGTCA-MH8919332_7   T_cells     0 0.000000        0    0   0
+9  AAACCTGAGCCCTAAT-newcastle74_7   T_cells     0 0.000000        0    0   0
+10        AAACCTGAGCGATGAC-22_5_6   T_cells     0 0.000000        0    0   0
+11   AAACCTGAGCTGTTCA-MH8919283_7   T_cells     0 0.000000        0    0   0
+12        AAACCTGAGGTGATTA-18_5_6   T_cells     0 0.000000        0    0   0
+13        AAACCTGAGGTTACCT-22_3_6   T_cells     0 0.000000        0    0   0
+14        AAACCTGAGTACTTGC-01_2_6   T_cells     0 0.000000        0    0   0
+15        AAACCTGAGTAGGCCA-02_2_6   T_cells     0 0.000000        0    0   0
+     A2M-AS1 A2ML1 A4GALT AAAS AACS AADAC AADACL3 AADAT
+1  0.0000000     0      0    0    0     0       0     0
+2  0.8687342     0      0    0    0     0       0     0
+3  1.6549473     0      0    0    0     0       0     0
+4  0.0000000     0      0    0    0     0       0     0
+5  0.0000000     0      0    0    0     0       0     0
+6  0.0000000     0      0    0    0     0       0     0
+7  0.0000000     0      0    0    0     0       0     0
+8  0.0000000     0      0    0    0     0       0     0
+9  0.0000000     0      0    0    0     0       0     0
+10 0.0000000     0      0    0    0     0       0     0
+11 0.0000000     0      0    0    0     0       0     0
+12 0.0000000     0      0    0    0     0       0     0
+13 0.0000000     0      0    0    0     0       0     0
+14 0.0000000     0      0    0    0     0       0     0
+15 0.0000000     0      0    0    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 3785    7
+[1] 8.407727
+[1] 3498    7
+[1] 3.115655
+                             pruned.labels
+AAACGGGAGTTGAGAT-MH8919230_7     Platelets
+AAAGCAAAGTCCATAC-MH8919230_7       T_cells
+AAAGCAATCCGTAGTA-MH8919230_7     Platelets
+AAAGCAATCTTTAGTC-MH8919230_7     Platelets
+AAAGTAGTCCAACCAA-MH8919230_7       T_cells
+AACACGTCACTAAGTC-MH8919230_7     Platelets
+
+       CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+        15          2          3        636       1144 
+                             RN7SK A1BG A1BG-AS1 A1CF A2M A2M-AS1 A2ML1 A4GALT
+AAACGGGAGTTGAGAT-MH8919230_7     0    0        0    0   0       0     0      0
+AAAGCAAAGTCCATAC-MH8919230_7     0    0        0    0   0       0     0      0
+AAAGCAATCCGTAGTA-MH8919230_7     0    0        0    0   0       0     0      0
+AAAGCAATCTTTAGTC-MH8919230_7     0    0        0    0   0       0     0      0
+AAAGTAGTCCAACCAA-MH8919230_7     0    0        0    0   0       0     0      0
+AACACGTCACTAAGTC-MH8919230_7     0    0        0    0   0       0     0      0
+AACCGCGAGCCGATTT-MH8919230_7     0    0        0    0   0       0     0      0
+AACTCCCGTTTGACAC-MH8919230_7     0    0        0    0   0       0     0      0
+AAGACCTCACATTTCT-MH8919230_7     0    0        0    0   0       0     0      0
+AAGCCGCTCCACGCAG-MH8919230_7     0    0        0    0   0       0     0      0
+AAGGTTCTCAGTTTGG-MH8919230_7     0    0        0    0   0       0     0      0
+AATCCAGGTCTCTCGT-MH8919230_7     0    0        0    0   0       0     0      0
+ACACCCTCACTCGACG-MH8919230_7     0    0        0    0   0       0     0      0
+ACACCCTGTATGGTTC-MH8919230_7     0    0        0    0   0       0     0      0
+ACACCGGCAAAGCGGT-MH8919230_7     0    0        0    0   0       0     0      0
+                             AAAS AACS AADAC AADACL3 AADAT PRXL2C AAGAB
+AAACGGGAGTTGAGAT-MH8919230_7    0    0     0       0     0      0     0
+AAAGCAAAGTCCATAC-MH8919230_7    0    0     0       0     0      0     0
+AAAGCAATCCGTAGTA-MH8919230_7    0    0     0       0     0      0     0
+AAAGCAATCTTTAGTC-MH8919230_7    0    0     0       0     0      0     0
+AAAGTAGTCCAACCAA-MH8919230_7    0    0     0       0     0      0     0
+AACACGTCACTAAGTC-MH8919230_7    0    0     0       0     0      0     0
+AACCGCGAGCCGATTT-MH8919230_7    0    0     0       0     0      0     0
+AACTCCCGTTTGACAC-MH8919230_7    0    0     0       0     0      0     0
+AAGACCTCACATTTCT-MH8919230_7    0    0     0       0     0      0     0
+AAGCCGCTCCACGCAG-MH8919230_7    0    0     0       0     0      0     0
+AAGGTTCTCAGTTTGG-MH8919230_7    0    0     0       0     0      0     0
+AATCCAGGTCTCTCGT-MH8919230_7    0    0     0       0     0      0     0
+ACACCCTCACTCGACG-MH8919230_7    0    0     0       0     0      0     0
+ACACCCTGTATGGTTC-MH8919230_7    0    0     0       0     0      0     0
+ACACCGGCAAAGCGGT-MH8919230_7    0    0     0       0     0      0     0
+                      Row.names cell_type RN7SK      A1BG A1BG-AS1 A1CF A2M
+1  AAACCTGAGTCTTGCA-MH8919278_7   T_cells     0 0.0000000        0    0   0
+2  AAACCTGGTTAAAGAC-MH8919281_7 Platelets     0 0.0000000        0    0   0
+3  AAACGGGAGTTGAGAT-MH8919230_7 Platelets     0 0.0000000        0    0   0
+4  AAACGGGCAGCTGTGC-MH8919280_7   T_cells     0 0.8114862        0    0   0
+5  AAACGGGGTTTGGGCC-MH8919231_7 Platelets     0 0.0000000        0    0   0
+6  AAAGATGAGACGACGT-MH8919232_7 Platelets     0 0.0000000        0    0   0
+7  AAAGATGCATTAGGCT-MH8919278_7   T_cells     0 0.0000000        0    0   0
+8  AAAGATGCATTGGGCC-MH8919281_7   T_cells     0 2.0199681        0    0   0
+9  AAAGATGGTGGAAAGA-MH8919278_7   T_cells     0 0.0000000        0    0   0
+10 AAAGCAAAGCGATATA-MH8919231_7   T_cells     0 2.0521038        0    0   0
+11 AAAGCAAAGTCCATAC-MH8919230_7   T_cells     0 0.0000000        0    0   0
+12 AAAGCAACAACTGCGC-MH8919278_7   T_cells     0 0.0000000        0    0   0
+13 AAAGCAACAATCGGTT-MH8919279_7   T_cells     0 0.0000000        0    0   0
+14 AAAGCAACACTTAACG-MH8919279_7   T_cells     0 0.0000000        0    0   0
+15 AAAGCAATCCGTAGTA-MH8919230_7 Platelets     0 0.0000000        0    0   0
+    A2M-AS1 A2ML1 A4GALT AAAS AACS AADAC AADACL3 AADAT
+1  1.522622     0      0    0    0     0       0     0
+2  0.000000     0      0    0    0     0       0     0
+3  0.000000     0      0    0    0     0       0     0
+4  0.000000     0      0    0    0     0       0     0
+5  0.000000     0      0    0    0     0       0     0
+6  0.000000     0      0    0    0     0       0     0
+7  0.000000     0      0    0    0     0       0     0
+8  0.000000     0      0    0    0     0       0     0
+9  0.000000     0      0    0    0     0       0     0
+10 0.000000     0      0    0    0     0       0     0
+11 0.000000     0      0    0    0     0       0     0
+12 0.000000     0      0    0    0     0       0     0
+13 0.000000     0      0    0    0     0       0     0
+14 0.000000     0      0    0    0     0       0     0
+15 0.000000     0      0    0    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 1162    7
+[1] 8.503387
+[1] 955   7
+[1] 3.056901
+                       pruned.labels
+AAACGAAAGCTGTACT-1_2_4       T_cells
+AAACGAATCCGATCTC-1_2_4     Platelets
+AAAGGATTCAGCGTCG-1_2_4       T_cells
+AAAGTGAAGGCAGGTT-1_2_4       T_cells
+AAAGTGACAAACACGG-1_2_4       T_cells
+AACAAAGCATGATGCT-1_2_4       T_cells
+
+        BM        CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+       104        918        314        112       3415      24414 
+                       RN7SK      A1BG A1BG-AS1 A1CF A2M  A2M-AS1 A2ML1 A4GALT
+AAACGAAAGCTGTACT-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AAACGAATCCGATCTC-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AAAGGATTCAGCGTCG-1_2_4     0 1.0849351        0    0   0 1.593003     0      0
+AAAGTGAAGGCAGGTT-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AAAGTGACAAACACGG-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AACAAAGCATGATGCT-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AACAAAGTCAGGACAG-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AACACACTCGGTCTAA-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AACAGGGAGTGATAGT-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AACCATGGTCCTGGGT-1_2_4     0 0.9647637        0    0   0 0.000000     0      0
+AACTTCTAGGCACAAC-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AACTTCTGTTTCGTAG-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AAGACAAAGCCACTCG-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AAGATAGAGACCAACG-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+AAGCGAGTCCATCAGA-1_2_4     0 0.0000000        0    0   0 0.000000     0      0
+                       AAAS AACS AADAC AADACL3 AADAT    PRXL2C    AAGAB
+AAACGAAAGCTGTACT-1_2_4    0    0     0       0     0 0.0000000 1.107626
+AAACGAATCCGATCTC-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AAAGGATTCAGCGTCG-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AAAGTGAAGGCAGGTT-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AAAGTGACAAACACGG-1_2_4    0    0     0       0     0 0.8101671 0.000000
+AACAAAGCATGATGCT-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AACAAAGTCAGGACAG-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AACACACTCGGTCTAA-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AACAGGGAGTGATAGT-1_2_4    0    0     0       0     0 1.0933072 0.000000
+AACCATGGTCCTGGGT-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AACTTCTAGGCACAAC-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AACTTCTGTTTCGTAG-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AAGACAAAGCCACTCG-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AAGATAGAGACCAACG-1_2_4    0    0     0       0     0 0.0000000 0.000000
+AAGCGAGTCCATCAGA-1_2_4    0    0     0       0     0 0.0000000 0.000000
+                      Row.names cell_type RN7SK     A1BG A1BG-AS1 A1CF      A2M
+1        AAACCCACACGCAAAG-1_3_4 Platelets     0 0.000000        0    0 0.000000
+2        AAACCCACATATAGCC-1_7_4   T_cells     0 0.000000        0    0 2.163801
+3  AAACCTGAGAAACCTA-MH9179824_7   T_cells     0 0.000000        0    0 0.000000
+4  AAACCTGAGAGGTAGA-MH9143424_7   T_cells     0 0.000000        0    0 0.000000
+5  AAACCTGAGATCGGGT-MH9143327_7   T_cells     0 0.000000        0    0 0.000000
+6  AAACCTGAGCAGGTCA-MH9143371_7   T_cells     0 0.000000        0    0 0.000000
+7  AAACCTGAGCCCAGCT-MH9143324_7   T_cells     0 1.041993        0    0 0.000000
+8  AAACCTGAGCGTTGCC-MH9143424_7 Platelets     0 0.000000        0    0 0.000000
+9  AAACCTGAGGAGTTTA-MH9143424_7   T_cells     0 0.000000        0    0 0.000000
+10 AAACCTGAGGCGTACA-MH9143322_7   T_cells     0 0.000000        0    0 0.000000
+11 AAACCTGAGTACACCT-MH9179823_7   T_cells     0 0.000000        0    0 0.000000
+12 AAACCTGCACAAGTAA-MH8919331_7   T_cells     0 0.000000        0    0 0.000000
+13 AAACCTGCACGAAAGC-MH9143322_7   T_cells     0 0.000000        0    0 0.000000
+14 AAACCTGCAGATTGCT-MH9143427_7   T_cells     0 0.000000        0    0 0.000000
+15 AAACCTGCAGGTGGAT-MH9143326_7   T_cells     0 0.000000        0    0 0.000000
+   A2M-AS1 A2ML1 A4GALT      AAAS AACS AADAC AADACL3 AADAT
+1        0     0      0 0.0000000    0     0       0     0
+2        0     0      0 0.0000000    0     0       0     0
+3        0     0      0 0.0000000    0     0       0     0
+4        0     0      0 0.0000000    0     0       0     0
+5        0     0      0 0.0000000    0     0       0     0
+6        0     0      0 0.0000000    0     0       0     0
+7        0     0      0 0.0000000    0     0       0     0
+8        0     0      0 0.0000000    0     0       0     0
+9        0     0      0 0.0000000    0     0       0     0
+10       0     0      0 0.7851556    0     0       0     0
+11       0     0      0 0.0000000    0     0       0     0
+12       0     0      0 0.0000000    0     0       0     0
+13       0     0      0 0.0000000    0     0       0     0
+14       0     0      0 0.0000000    0     0       0     0
+15       0     0      0 0.0000000    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 4122    7
+[1] 7.387717
+[1] 3720    7
+[1] 1.958847
+                                 pruned.labels
+GSM4557333_561.1_GTAGTGAAAACT_1             BM
+GSM4557333_561.5_AGCCGCAATCCA_1      Platelets
+GSM4557333_561.7_GGCACCAAAGTT_1             BM
+GSM4557333_561.11_CTTACGTCCCCT_1    HSC_-G-CSF
+GSM4557333_561.12_CGCCACTTCTTA_1            BM
+GSM4557333_561.14_ATCACTTCACAC_1    HSC_-G-CSF
+
+        BM        CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+       141        629       1169         78       6195      69490 
+                                 RN7SK A1BG A1BG-AS1 A1CF A2M  A2M-AS1 A2ML1
+GSM4557333_561.1_GTAGTGAAAACT_1      0    0        0    0   0 0.000000     0
+GSM4557333_561.5_AGCCGCAATCCA_1      0    0        0    0   0 0.000000     0
+GSM4557333_561.7_GGCACCAAAGTT_1      0    0        0    0   0 0.000000     0
+GSM4557333_561.11_CTTACGTCCCCT_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.12_CGCCACTTCTTA_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.14_ATCACTTCACAC_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.20_TTTCAAGTGGTA_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.44_ATCGGGACCATA_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.45_GCCGGTCCGACC_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.49_TGAGTCCGAACA_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.50_GTCTATTTTGGT_1     0    0        0    0   0 2.247097     0
+GSM4557333_561.51_CGTCGTCATGCA_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.56_CAGACAGTTTAC_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.63_GGGGGTCCGAGC_1     0    0        0    0   0 0.000000     0
+GSM4557333_561.70_CGCCCGTGGTGA_1     0    0        0    0   0 0.000000     0
+                                 A4GALT AAAS     AACS AADAC AADACL3 AADAT
+GSM4557333_561.1_GTAGTGAAAACT_1       0    0 0.000000     0       0     0
+GSM4557333_561.5_AGCCGCAATCCA_1       0    0 0.000000     0       0     0
+GSM4557333_561.7_GGCACCAAAGTT_1       0    0 0.000000     0       0     0
+GSM4557333_561.11_CTTACGTCCCCT_1      0    0 0.000000     0       0     0
+GSM4557333_561.12_CGCCACTTCTTA_1      0    0 0.000000     0       0     0
+GSM4557333_561.14_ATCACTTCACAC_1      0    0 0.000000     0       0     0
+GSM4557333_561.20_TTTCAAGTGGTA_1      0    0 0.000000     0       0     0
+GSM4557333_561.44_ATCGGGACCATA_1      0    0 0.000000     0       0     0
+GSM4557333_561.45_GCCGGTCCGACC_1      0    0 0.000000     0       0     0
+GSM4557333_561.49_TGAGTCCGAACA_1      0    0 0.000000     0       0     0
+GSM4557333_561.50_GTCTATTTTGGT_1      0    0 0.000000     0       0     0
+GSM4557333_561.51_CGTCGTCATGCA_1      0    0 0.000000     0       0     0
+GSM4557333_561.56_CAGACAGTTTAC_1      0    0 0.000000     0       0     0
+GSM4557333_561.63_GGGGGTCCGAGC_1      0    0 0.000000     0       0     0
+GSM4557333_561.70_CGCCCGTGGTGA_1      0    0 2.368424     0       0     0
+                                 PRXL2C    AAGAB
+GSM4557333_561.1_GTAGTGAAAACT_1       0 0.000000
+GSM4557333_561.5_AGCCGCAATCCA_1       0 0.000000
+GSM4557333_561.7_GGCACCAAAGTT_1       0 0.000000
+GSM4557333_561.11_CTTACGTCCCCT_1      0 0.000000
+GSM4557333_561.12_CGCCACTTCTTA_1      0 0.000000
+GSM4557333_561.14_ATCACTTCACAC_1      0 2.074296
+GSM4557333_561.20_TTTCAAGTGGTA_1      0 0.000000
+GSM4557333_561.44_ATCGGGACCATA_1      0 0.000000
+GSM4557333_561.45_GCCGGTCCGACC_1      0 0.000000
+GSM4557333_561.49_TGAGTCCGAACA_1      0 0.000000
+GSM4557333_561.50_GTCTATTTTGGT_1      0 0.000000
+GSM4557333_561.51_CGTCGTCATGCA_1      0 0.000000
+GSM4557333_561.56_CAGACAGTTTAC_1      0 0.000000
+GSM4557333_561.63_GGGGGTCCGAGC_1      0 0.000000
+GSM4557333_561.70_CGCCCGTGGTGA_1      0 0.000000
+                Row.names  cell_type RN7SK A1BG A1BG-AS1 A1CF      A2M  A2M-AS1
+1  1_AAAGGTAAGTCGAGGT-1_3    T_cells     0    0        0    0 0.000000 0.000000
+2  1_AAATGGAAGCTAGAAT-1_3    T_cells     0    0        0    0 0.000000 1.972962
+3  1_AACAAGAGTCGGTAAG-1_3    T_cells     0    0        0    0 1.401869 1.401869
+4  1_AACCATGCACCCTAAA-1_3    T_cells     0    0        0    0 1.562203 1.562203
+5  1_AACCCAAGTGTTGAGG-1_3    T_cells     0    0        0    0 0.000000 3.178677
+6  1_AACCTGACATGGAACG-1_3    T_cells     0    0        0    0 0.000000 0.000000
+7  1_AACCTGATCTGTGTGA-1_3    T_cells     0    0        0    0 0.000000 0.000000
+8  1_AAGCGAGGTAGATCGG-1_3    T_cells     0    0        0    0 0.000000 1.364280
+9  1_AAGCGTTGTACACTCA-1_3    T_cells     0    0        0    0 0.000000 0.000000
+10 1_AAGGAATAGAGGCGTT-1_3    T_cells     0    0        0    0 0.000000 2.966691
+11 1_AAGGAATTCGCAAGAG-1_3 HSC_-G-CSF     0    0        0    0 0.000000 0.000000
+12 1_AAGTGAATCACCTTGC-1_3 HSC_-G-CSF     0    0        0    0 0.000000 0.000000
+13 1_AATCACGCAAGGTTGG-1_3    T_cells     0    0        0    0 0.000000 0.000000
+14 1_AATCACGGTACTGAGG-1_3    T_cells     0    0        0    0 0.000000 2.343362
+15 1_AATCACGTCTGAGGTT-1_3    T_cells     0    0        0    0 0.000000 0.000000
+   A2ML1 A4GALT AAAS AACS AADAC AADACL3 AADAT
+1      0      0    0    0     0       0     0
+2      0      0    0    0     0       0     0
+3      0      0    0    0     0       0     0
+4      0      0    0    0     0       0     0
+5      0      0    0    0     0       0     0
+6      0      0    0    0     0       0     0
+7      0      0    0    0     0       0     0
+8      0      0    0    0     0       0     0
+9      0      0    0    0     0       0     0
+10     0      0    0    0     0       0     0
+11     0      0    0    0     0       0     0
+12     0      0    0    0     0       0     0
+13     0      0    0    0     0       0     0
+14     0      0    0    0     0       0     0
+15     0      0    0    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 5463    7
+[1] 8.2213
+[1] 4733    7
+[1] 2.831544
+                                   pruned.labels
+GSM4557327_555_1.19_CATCTGGCTATC_1            BM
+GSM4557327_555_1.33_TAACGCAAACCC_1    HSC_-G-CSF
+GSM4557327_555_1.47_ACGCTCACTCAA_1       T_cells
+GSM4557327_555_1.49_TACCCTAATAAA_1    HSC_-G-CSF
+GSM4557327_555_1.62_AGACCCTTCATT_1    HSC_-G-CSF
+GSM4557327_555_1.65_TTCTCTGTCTGG_1    HSC_-G-CSF
+
+        BM        CMP HSC_-G-CSF        MEP  Platelets    T_cells 
+      1156       1685       7260        225      17643      45387 
+                                    RN7SK A1BG A1BG-AS1 A1CF A2M A2M-AS1 A2ML1
+GSM4557327_555_1.19_CATCTGGCTATC_1      0    0        0    0   0       0     0
+GSM4557327_555_1.33_TAACGCAAACCC_1      0    0        0    0   0       0     0
+GSM4557327_555_1.47_ACGCTCACTCAA_1      0    0        0    0   0       0     0
+GSM4557327_555_1.49_TACCCTAATAAA_1      0    0        0    0   0       0     0
+GSM4557327_555_1.62_AGACCCTTCATT_1      0    0        0    0   0       0     0
+GSM4557327_555_1.65_TTCTCTGTCTGG_1      0    0        0    0   0       0     0
+GSM4557327_555_1.67_TTCAATGTGGTA_1      0    0        0    0   0       0     0
+GSM4557327_555_1.69_GGGACTCACGCG_1      0    0        0    0   0       0     0
+GSM4557327_555_1.75_TCCCGGTTACAG_1      0    0        0    0   0       0     0
+GSM4557327_555_1.85_ATCCGCCCTCCT_1      0    0        0    0   0       0     0
+GSM4557327_555_1.87_AAACCAGGGCGC_1      0    0        0    0   0       0     0
+GSM4557327_555_1.88_GCAAGCTACGAC_1      0    0        0    0   0       0     0
+GSM4557327_555_1.94_GGTCAGTCCTGC_1      0    0        0    0   0       0     0
+GSM4557327_555_1.102_TAATTAGCCACC_1     0    0        0    0   0       0     0
+GSM4557327_555_1.105_TGGCTCGTGACT_1     0    0        0    0   0       0     0
+                                    A4GALT AAAS AACS AADAC AADACL3 AADAT PRXL2C
+GSM4557327_555_1.19_CATCTGGCTATC_1       0    0    0     0       0     0      0
+GSM4557327_555_1.33_TAACGCAAACCC_1       0    0    0     0       0     0      0
+GSM4557327_555_1.47_ACGCTCACTCAA_1       0    0    0     0       0     0      0
+GSM4557327_555_1.49_TACCCTAATAAA_1       0    0    0     0       0     0      0
+GSM4557327_555_1.62_AGACCCTTCATT_1       0    0    0     0       0     0      0
+GSM4557327_555_1.65_TTCTCTGTCTGG_1       0    0    0     0       0     0      0
+GSM4557327_555_1.67_TTCAATGTGGTA_1       0    0    0     0       0     0      0
+GSM4557327_555_1.69_GGGACTCACGCG_1       0    0    0     0       0     0      0
+GSM4557327_555_1.75_TCCCGGTTACAG_1       0    0    0     0       0     0      0
+GSM4557327_555_1.85_ATCCGCCCTCCT_1       0    0    0     0       0     0      0
+GSM4557327_555_1.87_AAACCAGGGCGC_1       0    0    0     0       0     0      0
+GSM4557327_555_1.88_GCAAGCTACGAC_1       0    0    0     0       0     0      0
+GSM4557327_555_1.94_GGTCAGTCCTGC_1       0    0    0     0       0     0      0
+GSM4557327_555_1.102_TAATTAGCCACC_1      0    0    0     0       0     0      0
+GSM4557327_555_1.105_TGGCTCGTGACT_1      0    0    0     0       0     0      0
+                                    AAGAB
+GSM4557327_555_1.19_CATCTGGCTATC_1      0
+GSM4557327_555_1.33_TAACGCAAACCC_1      0
+GSM4557327_555_1.47_ACGCTCACTCAA_1      0
+GSM4557327_555_1.49_TACCCTAATAAA_1      0
+GSM4557327_555_1.62_AGACCCTTCATT_1      0
+GSM4557327_555_1.65_TTCTCTGTCTGG_1      0
+GSM4557327_555_1.67_TTCAATGTGGTA_1      0
+GSM4557327_555_1.69_GGGACTCACGCG_1      0
+GSM4557327_555_1.75_TCCCGGTTACAG_1      0
+GSM4557327_555_1.85_ATCCGCCCTCCT_1      0
+GSM4557327_555_1.87_AAACCAGGGCGC_1      0
+GSM4557327_555_1.88_GCAAGCTACGAC_1      0
+GSM4557327_555_1.94_GGTCAGTCCTGC_1      0
+GSM4557327_555_1.102_TAATTAGCCACC_1     0
+GSM4557327_555_1.105_TGGCTCGTGACT_1     0
+                Row.names  cell_type RN7SK      A1BG A1BG-AS1 A1CF       A2M
+1  3_AAACCCAAGTTCCGGC-1_3    T_cells     0 0.0000000        0    0 0.0000000
+2  3_AAACGAAGTCCTACGG-1_3    T_cells     0 0.0000000        0    0 0.0000000
+3  3_AAAGGATCAATGGCAG-1_3    T_cells     0 0.0000000        0    0 0.0000000
+4  3_AAAGGATCACTGGATT-1_3    T_cells     0 0.0000000        0    0 0.8506644
+5  3_AAAGGTATCAGGAACG-1_3    T_cells     0 0.0000000        0    0 0.0000000
+6  3_AAAGTCCTCTGGAAGG-1_3    T_cells     0 0.7391200        0    0 0.0000000
+7  3_AACAAGAAGAATCGAT-1_3 HSC_-G-CSF     0 0.0000000        0    0 0.0000000
+8  3_AACACACTCGTGCACG-1_3    T_cells     0 0.0000000        0    0 0.0000000
+9  3_AACCAACAGTACAGCG-1_3    T_cells     0 0.0000000        0    0 0.0000000
+10 3_AACCACATCATTGGTG-1_3    T_cells     0 1.2996710        0    0 0.0000000
+11 3_AACCCAACAATTGAAG-1_3    T_cells     0 0.9219681        0    0 0.0000000
+12 3_AACCTGATCTGGGCCA-1_3    T_cells     0 0.0000000        0    0 0.0000000
+13 3_AAGATAGTCGCAGAGA-1_3    T_cells     0 0.0000000        0    0 0.0000000
+14 3_AAGCGTTAGTCCTGCG-1_3    T_cells     0 0.0000000        0    0 0.0000000
+15 3_AAGTTCGGTCGGTACC-1_3 HSC_-G-CSF     0 0.0000000        0    0 0.0000000
+     A2M-AS1 A2ML1 A4GALT    AAAS AACS AADAC AADACL3 AADAT
+1  0.0000000     0      0 0.00000    0     0       0     0
+2  0.0000000     0      0 0.00000    0     0       0     0
+3  0.0000000     0      0 0.00000    0     0       0     0
+4  0.0000000     0      0 0.00000    0     0       0     0
+5  0.0000000     0      0 0.00000    0     0       0     0
+6  0.0000000     0      0 0.73912    0     0       0     0
+7  0.0000000     0      0 0.00000    0     0       0     0
+8  0.0000000     0      0 0.00000    0     0       0     0
+9  0.9013167     0      0 0.00000    0     0       0     0
+10 1.2996710     0      0 0.00000    0     0       0     0
+11 0.0000000     0      0 0.00000    0     0       0     0
+12 0.8278213     0      0 0.00000    0     0       0     0
+13 0.0000000     0      0 0.00000    0     0       0     0
+14 1.3160095     0      0 0.00000    0     0       0     0
+15 0.0000000     0      0 0.00000    0     0       0     0
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 8748    7
+[1] 8.586372
+[1] 6997    7
+[1] 3.008267

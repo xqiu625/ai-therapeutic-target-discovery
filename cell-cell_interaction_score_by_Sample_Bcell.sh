@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=10 
 #SBATCH --mem=512gbG
-#SBATCH --job-name="int_CD4"
+#SBATCH --job-name="Bcell"
 #SBATCH -p highmem
 
 module unload R/4.0.1
@@ -13,5 +13,4 @@ module load hdf5/1.12.0_gcc-8.3.0
 module load workspace/scratch
 export TMPDIR=$SCRATCH
 
-
-Rscript --vanilla cell-cell_interaction.R
+Rscript --vanilla cell-cell_interaction_score_by_Sample_Bcell.R
