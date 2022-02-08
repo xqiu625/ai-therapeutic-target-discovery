@@ -45,7 +45,3 @@ Registered S3 method overwritten by 'gamlss':
   print.ri bit 
 There were 21 warnings (use warnings() to see them)
 [1] 400840     18
-Error in asMethod(object) : 
-  Cholmod error 'problem too large' at file ../Core/cholmod_dense.c, line 102
-Calls: t ... as.data.frame -> as.matrix -> as.matrix -> as -> asMethod
-Execution halted

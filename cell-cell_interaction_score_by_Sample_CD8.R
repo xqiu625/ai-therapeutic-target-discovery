@@ -9,7 +9,7 @@ library(rstatix)
 library(stringr)
 library(iTALK)
 
-data0 <- readRDS('/bigdata/godziklab/shared/Xinru/302005/datasets_v2/302005_platelet_Bcell_seurat_integrated.rds')
+data0 <- readRDS('/bigdata/godziklab/shared/Xinru/302005/datasets_v2/302005_platelet_CD8T_seurat_integrated.rds')
 
 
 # add metadata ------------------------------------------------------------
@@ -33,24 +33,6 @@ data1 <- subset(data0, pbmc == "Y")
 DefaultAssay(data1) <- "RNA"
 
 
-# Matrix Function ---------------------------------------------------------
-
-as_matrix <- function(mat){
-  
-  tmp <- matrix(data=0L, nrow = mat@Dim[1], ncol = mat@Dim[2])
-  
-  row_pos <- mat@i+1
-  col_pos <- findInterval(seq(mat@x)-1,mat@p[-1])+1
-  val <- mat@x
-  
-  for (i in seq_along(val)){
-    tmp[row_pos[i],col_pos[i]] <- val[i]
-  }
-  
-  row.names(tmp) <- mat@Dimnames[[1]]
-  colnames(tmp) <- mat@Dimnames[[2]]
-  return(tmp)
-}
 # Extract matrix ----------------------------------------------------------
 Categories <- factor(as.character(unique(data1@meta.data$Category)))
 
@@ -61,7 +43,7 @@ for(j in 1:length(Categories)){
     pt0 <- subset(pt, Sample_ID == samples[i])
     cell_type <- pt@meta.data %>% dplyr::select(pruned.labels)
     names(cell_type) <- c("cell_type")
-    New_matrix <- t(as.data.frame(as_matrix(pt@assays[["RNA"]]@data)))
+    New_matrix <- t(as.data.frame(pt@assays[["RNA"]]@data))
     expression_matrix <- merge(cell_type,New_matrix, by= 0)
     ntop= 100
     data <- as.data.frame(expression_matrix)
@@ -99,7 +81,7 @@ for(j in 1:length(Categories)){
     write.table(
       platelet_inter,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Category_select,"_", samples[i],'_platelet_Bcell_interaction_score.txt'),
+                    Category_select,"_", samples[i],'_platelet_CD8T_interaction_score.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -116,7 +98,7 @@ for(j in 1:length(Categories)){
     write.table(
       data2,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Category_select,"_", samples[i],'_platelet_Bcell_interaction_AVG.txt'),
+                    Category_select,"_", samples[i],'_platelet_CD8T_interaction_AVG.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -132,7 +114,7 @@ for(j in 1:length(Categories)){
     write.table(
       data3,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Category_select,"_", samples[i],'_platelet_Bcell_interaction_SUM.txt'),
+                    Category_select,"_", samples[i],'_platelet_CD8T_interaction_SUM.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
