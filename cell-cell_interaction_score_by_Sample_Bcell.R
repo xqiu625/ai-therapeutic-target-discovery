@@ -94,12 +94,12 @@ for(j in 1:length(Categories)){
     res_platelet <- res_platelet %>% dplyr::select(CellType_Pair, LR_Pair, Score)
     
     platelet_inter <- rbind(platelet_res, res_platelet)
-    platelet_inter$Category <- Category_select
+    platelet_inter$Category <- Categories[j]
     platelet_inter$Sample_ID <- samples[i]
     write.table(
       platelet_inter,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Category_select,"_", samples[i],'_platelet_Bcell_interaction_score.txt'),
+                    Categories[j],"_", samples[i],'_platelet_Bcell_interaction_score.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -110,13 +110,13 @@ for(j in 1:length(Categories)){
     data2 <- data2 %>%
       group_by(CellType_Pair) %>%
       summarize(Score = mean(Score, na.rm = TRUE))
-    data2$Category <- Category_select
+    data2$Category <- Categories[j]
     data2$Sample_ID <- samples[i]
     data2$type <- c("AVG")
     write.table(
       data2,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Category_select,"_", samples[i],'_platelet_Bcell_interaction_AVG.txt'),
+                    Categories[j],"_", samples[i],'_platelet_Bcell_interaction_AVG.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -126,13 +126,13 @@ for(j in 1:length(Categories)){
     data3 <- data3 %>%
       group_by(CellType_Pair) %>%
       summarize(Score = sum(Score, na.rm = TRUE))
-    data3$Category <- Category_select
+    data3$Category <- Categories[j]
     data3$Sample_ID <- samples[i]
     data3$type <- c("SUM")
     write.table(
       data3,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Category_select,"_", samples[i],'_platelet_Bcell_interaction_SUM.txt'),
+                    Categories[j],"_", samples[i],'_platelet_Bcell_interaction_SUM.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F

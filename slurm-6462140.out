@@ -44,7 +44,4 @@ Registered S3 method overwritten by 'gamlss':
   method   from
   print.ri bit 
 There were 21 warnings (use warnings() to see them)
-[1] 400840     18
-Error in Category_select : object 'Category_select' not found
-In addition: There were 50 or more warnings (use warnings() to see the first 50)
-Execution halted
+[1] 84873    18

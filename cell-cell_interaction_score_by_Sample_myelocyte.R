@@ -8,26 +8,8 @@ library(ggpubr)
 library(rstatix)
 library(stringr)
 library(iTALK)
-# Matrix Function ---------------------------------------------------------
 
-as_matrix <- function(mat){
-  
-  tmp <- matrix(data=0L, nrow = mat@Dim[1], ncol = mat@Dim[2])
-  
-  row_pos <- mat@i+1
-  col_pos <- findInterval(seq(mat@x)-1,mat@p[-1])+1
-  val <- mat@x
-  
-  for (i in seq_along(val)){
-    tmp[row_pos[i],col_pos[i]] <- val[i]
-  }
-  
-  row.names(tmp) <- mat@Dimnames[[1]]
-  colnames(tmp) <- mat@Dimnames[[2]]
-  return(tmp)
-}
-
-data0 <- readRDS('/bigdata/godziklab/shared/Xinru/302005/datasets_v2/302005_platelet_CD8T_seurat_integrated.rds')
+data0 <- readRDS('/bigdata/godziklab/shared/Xinru/302005/datasets_v2/302005_platelet_myelocyte_seurat_integrated.rds')
 
 
 # add metadata ------------------------------------------------------------
@@ -51,6 +33,24 @@ data1 <- subset(data0, pbmc == "Y")
 DefaultAssay(data1) <- "RNA"
 
 
+# Matrix Function ---------------------------------------------------------
+
+as_matrix <- function(mat){
+  
+  tmp <- matrix(data=0L, nrow = mat@Dim[1], ncol = mat@Dim[2])
+  
+  row_pos <- mat@i+1
+  col_pos <- findInterval(seq(mat@x)-1,mat@p[-1])+1
+  val <- mat@x
+  
+  for (i in seq_along(val)){
+    tmp[row_pos[i],col_pos[i]] <- val[i]
+  }
+  
+  row.names(tmp) <- mat@Dimnames[[1]]
+  colnames(tmp) <- mat@Dimnames[[2]]
+  return(tmp)
+}
 # Extract matrix ----------------------------------------------------------
 Categories <- factor(as.character(unique(data1@meta.data$Category)))
 
@@ -99,7 +99,7 @@ for(j in 1:length(Categories)){
     write.table(
       platelet_inter,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_CD8T_interaction_score.txt'),
+                    Categories[j],"_", samples[i],'_platelet_myelocyte_interaction_score.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -116,7 +116,7 @@ for(j in 1:length(Categories)){
     write.table(
       data2,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_CD8T_interaction_AVG.txt'),
+                    Categories[j],"_", samples[i],'_platelet_myelocyte_interaction_AVG.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -132,7 +132,7 @@ for(j in 1:length(Categories)){
     write.table(
       data3,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_CD8T_interaction_SUM.txt'),
+                    Categories[j],"_", samples[i],'_platelet_myelocyte_interaction_SUM.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F

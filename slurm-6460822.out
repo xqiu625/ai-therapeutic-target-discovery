@@ -44,7 +44,6 @@ Registered S3 method overwritten by 'gamlss':
   method   from
   print.ri bit 
 There were 21 warnings (use warnings() to see them)
-[1] 400840     18
-Error in Category_select : object 'Category_select' not found
-In addition: There were 50 or more warnings (use warnings() to see the first 50)
-Execution halted
+[1] 528859     18
+/var/spool/slurmd/job6460822/slurm_script: line 16: 60925 Killed                  Rscript --vanilla cell-cell_interaction_score_by_Sample_CD4.R
+slurmstepd-h05: error: Detected 1 oom-kill event(s) in step 6460822.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

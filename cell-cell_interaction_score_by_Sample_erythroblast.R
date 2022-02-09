@@ -27,7 +27,7 @@ as_matrix <- function(mat){
   return(tmp)
 }
 
-data0 <- readRDS('/bigdata/godziklab/shared/Xinru/302005/datasets_v2/302005_platelet_CD8T_seurat_integrated.rds')
+data0 <- readRDS('/bigdata/godziklab/shared/Xinru/302005/datasets_v2/302005_platelet_erythroblast_seurat_integrated.rds')
 
 
 # add metadata ------------------------------------------------------------
@@ -99,7 +99,7 @@ for(j in 1:length(Categories)){
     write.table(
       platelet_inter,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_CD8T_interaction_score.txt'),
+                    Categories[j],"_", samples[i],'_platelet_erythroblast_interaction_score.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -116,7 +116,7 @@ for(j in 1:length(Categories)){
     write.table(
       data2,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_CD8T_interaction_AVG.txt'),
+                    Categories[j],"_", samples[i],'_platelet_erythroblast_interaction_AVG.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -132,7 +132,7 @@ for(j in 1:length(Categories)){
     write.table(
       data3,
       file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_CD8T_interaction_SUM.txt'),
+                    Categories[j],"_", samples[i],'_platelet_erythroblast_interaction_SUM.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
