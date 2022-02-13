@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=10 
 #SBATCH --mem=256gbG
-#SBATCH --job-name="int_mye"
+#SBATCH --job-name="int_monocyte"
 #SBATCH -p intel,batch,short 
 
 module unload R/4.0.1
@@ -11,5 +11,4 @@ module load R/4.1.0_gcc-8.3.0
 module unload Rcpp
 module load hdf5/1.12.0_gcc-8.3.0
 
-
-Rscript --vanilla cell-cell_interaction_score_by_Sample_myelocyte.R
+Rscript --vanilla cell-cell_interaction_score_by_Sample_monocyte.R

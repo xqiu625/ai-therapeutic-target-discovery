@@ -32,7 +32,6 @@ data0@meta.data <- cell_meta
 data1 <- subset(data0, pbmc == "Y")
 DefaultAssay(data1) <- "RNA"
 
-
 # Matrix Function ---------------------------------------------------------
 
 as_matrix <- function(mat){
@@ -51,55 +50,56 @@ as_matrix <- function(mat){
   colnames(tmp) <- mat@Dimnames[[2]]
   return(tmp)
 }
-# Extract matrix ----------------------------------------------------------
-Categories <- factor(as.character(unique(data1@meta.data$Category)))
 
-for(j in 1:length(Categories)){
-  pt <- subset(data1, Category == Categories[j])
-  samples <- factor(as.character(unique(pt@meta.data$Sample_ID)))
-  for (i in 1:length(samples)){
-    pt0 <- subset(pt, Sample_ID == samples[i])
-    cell_type <- pt@meta.data %>% dplyr::select(pruned.labels)
-    names(cell_type) <- c("cell_type")
-    New_matrix <- t(as.data.frame(as_matrix(pt@assays[["RNA"]]@data)))
-    expression_matrix <- merge(cell_type,New_matrix, by= 0)
-    ntop= 100
-    data <- as.data.frame(expression_matrix)
-    data$cell_type <- as.character(data$cell_type)
-    highly_exprs_genes <-rawParse(data,top_genes=ntop,stats='mean')
-    
-    res_cytokine <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "cytokine")
-    res_checkpoint <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "checkpoint")
-    res_growth_factor <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "growth factor")
-    res_other <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "other")
-    res_cat <- rbind(res_cytokine, res_checkpoint, res_growth_factor, res_other)
-    platelet_res <- res_cat %>%
-      dplyr::filter(cell_from == "Platelets") %>%
-      dplyr::filter(cell_from_mean_exprs != 0) %>%
-      dplyr::filter(cell_to_mean_exprs != 0)
-    res_platelet <- res_cat %>%
-      dplyr::filter(cell_to == "Platelets") %>%
-      dplyr::filter(cell_from != "Platelets") %>%
-      dplyr::filter(cell_from_mean_exprs != 0) %>%
-      dplyr::filter(cell_to_mean_exprs != 0)
-    
-    platelet_res$LR_Pair <- paste(platelet_res$ligand, platelet_res$receptor, sep = " - ")
-    platelet_res$CellType_Pair <- paste(platelet_res$cell_from, platelet_res$cell_to, sep = " - ")
-    platelet_res$Score <- platelet_res$cell_from_mean_exprs * platelet_res$cell_to_mean_exprs
-    platelet_res <- platelet_res %>% dplyr::select(CellType_Pair, LR_Pair, Score)
-    
-    res_platelet$LR_Pair <- paste(res_platelet$ligand, res_platelet$receptor, sep = " - ")
-    res_platelet$CellType_Pair <- paste(res_platelet$cell_to, res_platelet$cell_from, sep = " - ")
-    res_platelet$Score <- res_platelet$cell_from_mean_exprs * res_platelet$cell_to_mean_exprs
-    res_platelet <- res_platelet %>% dplyr::select(CellType_Pair, LR_Pair, Score)
-    
-    platelet_inter <- rbind(platelet_res, res_platelet)
-    platelet_inter$Category <- Categories[j]
+# Extract matrix ----------------------------------------------------------
+
+df <- as.data.frame(table(data1@meta.data$Sample_ID))
+samples <- factor(as.character(unique(df$Var1)))
+
+for (i in 1:length(samples)){
+  pt0 <- subset(data1, Sample_ID == samples[i])
+  cell_type <- pt0@meta.data %>% dplyr::select(pruned.labels)
+  names(cell_type) <- c("cell_type")
+  New_matrix <- t(as.data.frame(as_matrix(pt0@assays[["RNA"]]@data)))
+  expression_matrix <- merge(cell_type,New_matrix, by= 0)
+  ntop= 100
+  data <- as.data.frame(expression_matrix)
+  data$cell_type <- as.character(data$cell_type)
+  highly_exprs_genes <-rawParse(data,top_genes=ntop,stats='mean')
+  
+  res_cytokine <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "cytokine")
+  res_checkpoint <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "checkpoint")
+  res_growth_factor <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "growth factor")
+  res_other <-FindLR(highly_exprs_genes,datatype='mean count',comm_type= "other")
+  res_cat <- rbind(res_cytokine, res_checkpoint, res_growth_factor, res_other)
+  
+  platelet_res <- res_cat %>%
+    dplyr::filter(cell_from == "Platelets") %>%
+    dplyr::filter(cell_from_mean_exprs != 0) %>%
+    dplyr::filter(cell_to_mean_exprs != 0)
+  res_platelet <- res_cat %>%
+    dplyr::filter(cell_to == "Platelets") %>%
+    dplyr::filter(cell_from != "Platelets") %>%
+    dplyr::filter(cell_from_mean_exprs != 0) %>%
+    dplyr::filter(cell_to_mean_exprs != 0)
+  
+  platelet_res$LR_Pair <- paste(platelet_res$ligand, platelet_res$receptor, sep = " - ")
+  platelet_res$CellType_Pair <- paste(platelet_res$cell_from, platelet_res$cell_to, sep = " - ")
+  platelet_res$Score <- platelet_res$cell_from_mean_exprs * platelet_res$cell_to_mean_exprs
+  platelet_res <- platelet_res %>% dplyr::select(CellType_Pair, LR_Pair, Score)
+  
+  res_platelet$LR_Pair <- paste(res_platelet$ligand, res_platelet$receptor, sep = " - ")
+  res_platelet$CellType_Pair <- paste(res_platelet$cell_to, res_platelet$cell_from, sep = " - ")
+  res_platelet$Score <- res_platelet$cell_from_mean_exprs * res_platelet$cell_to_mean_exprs
+  res_platelet <- res_platelet %>% dplyr::select(CellType_Pair, LR_Pair, Score)
+  
+  platelet_inter <- rbind(platelet_res, res_platelet)
+  if (dim(platelet_inter)[1] > 0){
     platelet_inter$Sample_ID <- samples[i]
     write.table(
       platelet_inter,
-      file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_myelocyte_interaction_score.txt'),
+      file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample_v2/myelocyte/", 
+                    samples[i],'_platelet_myelocyte_interaction_score.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -110,13 +110,12 @@ for(j in 1:length(Categories)){
     data2 <- data2 %>%
       group_by(CellType_Pair) %>%
       summarize(Score = mean(Score, na.rm = TRUE))
-    data2$Category <- Categories[j]
     data2$Sample_ID <- samples[i]
     data2$type <- c("AVG")
     write.table(
       data2,
-      file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_myelocyte_interaction_AVG.txt'),
+      file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample_v2/myelocyte/", 
+                    samples[i],'_platelet_myelocyte_interaction_AVG.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
@@ -126,16 +125,19 @@ for(j in 1:length(Categories)){
     data3 <- data3 %>%
       group_by(CellType_Pair) %>%
       summarize(Score = sum(Score, na.rm = TRUE))
-    data3$Category <- Categories[j]
     data3$Sample_ID <- samples[i]
     data3$type <- c("SUM")
     write.table(
       data3,
-      file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample/", 
-                    Categories[j],"_", samples[i],'_platelet_myelocyte_interaction_SUM.txt'),
+      file = paste0("/bigdata/godziklab/shared/Xinru/302005/22-02/Interaction_score_sample_v2/myelocyte/", 
+                    samples[i],'_platelet_myelocyte_interaction_SUM.txt'),
       sep='\t',
       quote = FALSE,
       row.names = F
     )
   }
 }
+
+
+
+
