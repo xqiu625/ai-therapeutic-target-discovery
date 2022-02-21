@@ -1,0 +1,105 @@
+Unloading R/4.0.1
+  Unloading useless requirement: java/8u45 libiconv/1.16 hdf5/1.10.1 gdal/2.1.3
+    geos/3.7.1 java/8 netcdf/4.4.1.1 pandoc/2.9.2.1 texlive/2017 ggobi/2.1.11
+    workspace/scratch
+Loading R/4.1.0_gcc-8.3.0
+  Loading requirement: workspace/scratch GCCcore/8.3.0
+    binutils/2.35.1-GCCcore-8.3.0 GCC/8.3.0 gdal/3.2.2_gcc-8.3.0
+    geos/3.9.1_gcc-8.3.0 texlive/2017 pandoc/2.9.2.1 java/16.0.1
+Registered S3 method overwritten by 'spatstat.geom':
+  method     from
+  print.boxx cli 
+Attaching SeuratObject
+Warning messages:
+1: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘tibble’ 
+2: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘pillar’ 
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning: Non-unique cell names (colnames) present in the input matrix, making unique
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 4/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 5/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 5 iterations
+Warning: Invalid name supplied, making object name syntactically valid. New object name is Seurat..ProjectDim.RNA.harmony; see ?make.names for more details on syntax validity
+Warning messages:
+1: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+2: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+3: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+4: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+5: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+6: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+7: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+8: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+9: Quick-TRANSfer stage steps exceeded maximum (= 32452300) 
+null device 
+          1 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+01:10:37 UMAP embedding parameters a = 0.9922 b = 1.112
+01:10:38 Read 649046 rows and found 30 numeric columns
+01:10:38 Using Annoy for neighbor search, n_neighbors = 30
+01:10:38 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+01:12:39 Writing NN index file to temp file /scratch/xinruqiu/6565450/RtmpI7ywkG/file10283646bc60
+01:12:39 Searching Annoy index using 1 thread, search_k = 3000
+01:21:10 Annoy recall = 100%
+01:21:11 Commencing smooth kNN distance calibration using 1 thread
+01:22:05 Initializing from normalized Laplacian + noise
+01:23:37 Commencing optimization for 200 epochs, with 29932460 positive edges
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+01:44:45 Optimization finished
+Computing nearest neighbor graph
+Computing SNN
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 649046
+Number of edges: 15804858
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.8819
+Number of communities: 87
+Elapsed time: 668 seconds
+41 singletons identified. 46 final clusters.
