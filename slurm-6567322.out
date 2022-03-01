@@ -1,0 +1,41 @@
+Registered S3 method overwritten by 'spatstat.geom':
+  method     from
+  print.boxx cli 
+Attaching SeuratObject
+Warning messages:
+1: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘tibble’ 
+2: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘pillar’ 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘ggpubr’
+
+The following object is masked from ‘package:cowplot’:
+
+    get_legend
+
+Warning message:
+replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘hms’ 
+
+Attaching package: ‘rstatix’
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+Registered S3 method overwritten by 'gamlss':
+  method   from
+  print.ri bit 
+There were 21 warnings (use warnings() to see them)
+Error in table(data1@meta.data$Sample_ID) : object 'data1' not found
+Calls: as.data.frame -> table
+Execution halted

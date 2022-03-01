@@ -1,0 +1,69 @@
+Registered S3 method overwritten by 'spatstat.geom':
+  method     from
+  print.boxx cli 
+Attaching SeuratObject
+Warning messages:
+1: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘tibble’ 
+2: replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘pillar’ 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘ggpubr’
+
+The following object is masked from ‘package:cowplot’:
+
+    get_legend
+
+Warning message:
+replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘hms’ 
+
+Attaching package: ‘rstatix’
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+Registered S3 method overwritten by 'gamlss':
+  method   from
+  print.ri bit 
+There were 21 warnings (use warnings() to see them)
+Error in `stop_subscript()`:
+! Can't subset columns that don't exist.
+✖ Column `pruned.labels` doesn't exist.
+Backtrace:
+     ▆
+  1. ├─pt0@meta.data %>% dplyr::select(pruned.labels)
+  2. ├─dplyr::select(., pruned.labels)
+  3. └─dplyr:::select.data.frame(., pruned.labels)
+  4.   └─tidyselect::eval_select(expr(c(...)), .data)
+  5.     └─tidyselect:::eval_select_impl(...)
+  6.       ├─tidyselect:::with_subscript_errors(...)
+  7.       │ ├─base::tryCatch(...)
+  8.       │ │ └─base tryCatchList(expr, classes, parentenv, handlers)
+  9.       │ │   └─base tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 10.       │ │     └─base doTryCatch(return(expr), name, parentenv, handler)
+ 11.       │ └─tidyselect:::instrument_base_errors(expr)
+ 12.       │   └─base::withCallingHandlers(...)
+ 13.       └─tidyselect:::vars_select_eval(...)
+ 14.         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
+ 15.           └─tidyselect:::eval_c(expr, data_mask, context_mask)
+ 16.             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
+ 17.               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
+ 18.                 └─tidyselect:::as_indices_sel_impl(...)
+ 19.                   └─tidyselect:::as_indices_impl(x, vars, strict = strict)
+ 20.                     └─tidyselect:::chr_as_locations(x, vars)
+ 21.                       └─vctrs::vec_as_location(x, n = length(vars), names = vars)
+ 22.                         └─vctrs `<fn>`()
+ 23.                           └─vctrs:::stop_subscript_oob(...)
+ 24.                             └─vctrs:::stop_subscript(...)
+ 25.                               └─rlang::abort(...)
+Execution halted

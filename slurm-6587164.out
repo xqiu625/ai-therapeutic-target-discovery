@@ -1,0 +1,11 @@
+Unloading R/4.0.1
+  Unloading useless requirement: java/8u45 libiconv/1.16 hdf5/1.10.1 gdal/2.1.3
+    geos/3.7.1 java/8 netcdf/4.4.1.1 pandoc/2.9.2.1 texlive/2017 ggobi/2.1.11
+    workspace/scratch
+Loading R/4.1.0_gcc-8.3.0
+  Loading requirement: workspace/scratch GCCcore/8.3.0
+    binutils/2.35.1-GCCcore-8.3.0 GCC/8.3.0 gdal/3.2.2_gcc-8.3.0
+    geos/3.9.1_gcc-8.3.0 texlive/2017 pandoc/2.9.2.1 java/16.0.1
+Error in libPaths(c("/bigdata/godziklab/shared/Xinru/R", .libPaths())) : 
+  could not find function "libPaths"
+Execution halted
