@@ -12,17 +12,17 @@
 ## Key Requirements Match
 | Requirement | My Qualification | Notes/Evidence |
 |------------|------------------|----------------|
-| Ph.D. in relevant field | | Document degree field and completion date |
-| Strong skills in computational/experimental quantitative biology | | List relevant projects/experience |
-| First-author publications | | List your publications |
-| Expertise in one or more areas: computational biology, ODE modeling, next-gen sequencing analysis, single-molecule biology, single-cell biology, time-lapse microscopy, flow cytometry | | Detail specific expertise |
-| Programming skills | | List languages and projects |
+| Ph.D. in relevant field | yes | Document degree field and completion date |
+| Strong skills in computational/experimental quantitative biology | yes | List relevant projects/experience |
+| First-author publications | 3 | List your publications |
+| Expertise in one or more areas: computational biology, ODE modeling, next-gen sequencing analysis, single-molecule biology, single-cell biology, time-lapse microscopy, flow cytometry | ODE modeling? | Detail specific expertise |
+| Programming skills | yes | List languages and projects |
 
 ## Application Details
 - Application Status: Not Started
 - Date Found: December 6, 2024
 - Date Submitted: 
-- Application ID/Reference Number:
+- Application ID/Reference Number: 801001
 
 ## Application Materials Needed
 - [ ] Curriculum vitae
