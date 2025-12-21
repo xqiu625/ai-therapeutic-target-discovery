@@ -1,0 +1,4 @@
+model,auc
+Random Forest,0.9578596089092349
+GradientBoosting,0.9876333536896196
+LightGBM,0.9911309378760864
