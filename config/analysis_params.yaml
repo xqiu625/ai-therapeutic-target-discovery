@@ -1,0 +1,113 @@
+# Sepsis Target Discovery Pipeline - Analysis Parameters
+
+# Data paths
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  embeddings: "data/embeddings"
+  grn: "data/grn"
+  external: "data/external"
+  results: "results"
+  figures: "figures"
+
+# GEO data
+geo:
+  accession: "GSE167363"
+  samples: 12
+  expected_cells: 57000
+
+# Quality Control
+qc:
+  min_genes: 200
+  max_genes: 5000
+  max_pct_mt: 20
+  min_cells_per_gene: 10
+
+# Normalization
+normalization:
+  target_sum: 10000
+  n_top_genes: 3000  # HVGs
+
+# Dimensionality reduction
+dim_reduction:
+  n_pcs: 50
+  n_neighbors: 15
+  umap_min_dist: 0.1
+
+# Clustering
+clustering:
+  resolution: 0.5
+  method: "leiden"
+
+# Foundation Models
+foundation_models:
+  scgpt:
+    enabled: true
+    model_name: "scGPT_human"
+    batch_size: 64
+  geneformer:
+    enabled: true
+    model_name: "geneformer-12L-30M"
+    input_size: 2048
+
+# Machine Learning
+ml_prediction:
+  models:
+    - "random_forest"
+    - "xgboost"
+    - "lightgbm"
+  cv_folds: 5
+  test_size: 0.3
+  random_state: 42
+
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+
+  xgboost:
+    n_estimators: 200
+    max_depth: 6
+    learning_rate: 0.1
+
+  lightgbm:
+    n_estimators: 200
+    max_depth: 6
+    learning_rate: 0.1
+
+# GRN/SCENIC
+grn:
+  n_workers: 16
+  databases:
+    - "hg38_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather"
+    - "hg38_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather"
+  motif_annotations: "motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl"
+  tf_list: "hs_hgnc_tfs.txt"
+
+# Trajectory Analysis
+trajectory:
+  n_diffmap_components: 15
+  n_pseudotime_bins: 10
+
+# Target Prioritization
+prioritization:
+  weights:
+    differential_expression: 0.25
+    ml_feature_importance: 0.20
+    grn_centrality: 0.20
+    trajectory_dynamics: 0.15
+    druggability: 0.20
+
+  top_n_targets: 50
+  validation_target: "CD52"
+  target_rank_threshold: 5  # CD52 should be in top N
+
+# Druggability
+druggability:
+  dgidb_api: "https://dgidb.org/api/v2/interactions.json"
+  query_batch_size: 100
+
+# Visualization
+visualization:
+  dpi: 150
+  figure_format: "png"
+  color_palette: "Set2"

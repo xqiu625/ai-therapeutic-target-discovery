@@ -1,0 +1,51 @@
+# Data files (too large for git)
+data/raw/
+data/processed/*.h5ad
+data/processed/*.mtx*
+*.h5ad
+*.mtx
+*.mtx.gz
+
+# Logs
+logs/
+*.out
+*.err
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# Large model files
+*.feather
+*.pkl
+*.pickle
+
+# Temporary
+*.tmp
+*.temp
+.claude/
+memory-bank/

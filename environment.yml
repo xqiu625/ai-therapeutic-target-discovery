@@ -1,0 +1,73 @@
+name: sepsis-target
+channels:
+  - conda-forge
+  - bioconda
+  - pytorch
+  - nvidia
+dependencies:
+  # Core
+  - python=3.10
+  - pip
+  - jupyter
+  - jupyterlab
+  - ipykernel
+
+  # Single-cell analysis
+  - scanpy>=1.9
+  - anndata>=0.9
+  - leidenalg
+  - louvain
+
+  # Deep learning
+  - pytorch>=2.0
+  - pytorch-cuda=11.8
+  - transformers
+  - accelerate
+
+  # Machine learning
+  - scikit-learn>=1.3
+  - xgboost>=2.0
+  - lightgbm>=4.0
+  - shap>=0.42
+
+  # Data processing
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
+  - h5py
+
+  # Visualization
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  - plotly>=5.0
+
+  # Network analysis
+  - networkx>=3.0
+
+  # Utilities
+  - tqdm
+  - pyyaml
+  - requests
+
+  # GEO data download
+  - geoparse
+
+  - pip:
+    # Foundation models
+    - scgpt
+    - geneformer
+
+    # GRN analysis
+    - pyscenic
+    - arboreto
+    - ctxcore
+
+    # Trajectory analysis
+    - scvelo
+    - cellrank
+
+    # Visualization
+    - pyvis
+
+    # Utilities
+    - adjustText
