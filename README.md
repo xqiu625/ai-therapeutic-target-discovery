@@ -70,6 +70,10 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 | Gradient Boosting | 0.988 | Strong |
 | **LightGBM** | **0.991** | Best performer |
 
+<p align="center">
+  <img src="figures/fig3_outcome_prediction.png" width="600" alt="ML Outcome Prediction">
+</p>
+
 ### Top Predictive Genes
 
 | Rank | Gene | Importance | Biological Function |
@@ -92,6 +96,11 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 | 4 | LY6E | 0.285 | DE + ML |
 | 5 | PSME2 | 0.271 | DE + ML |
 
+<p align="center">
+  <img src="figures/fig6_target_ranking.png" width="500" alt="Target Ranking">
+  <img src="figures/target_evidence_heatmap.png" width="500" alt="Evidence Heatmap">
+</p>
+
 ### Validated Target: CD52
 
 | Evidence Type | Value | Interpretation |
@@ -103,6 +112,10 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 | Known Drug | Alemtuzumab | Anti-CD52 antibody |
 
 **Therapeutic Insight:** CD52 is *protective* in sepsis (higher in survivors). The therapeutic strategy should *enhance* CD52 signaling, not block it.
+
+<p align="center">
+  <img src="figures/fig7_cd52_summary.png" width="800" alt="CD52 Summary">
+</p>
 
 ### Drug Repurposing Candidates
 
@@ -118,6 +131,10 @@ Top drugs from Enrichr signature matching that may upregulate the survivor gene 
 | **Irinotecan** | 906 | Topoisomerase inhibitor | **Yes** |
 
 *Drugs containing CD52 in their upregulated gene signature may directly enhance CD52 expression.*
+
+<p align="center">
+  <img src="figures/fig8_enrichr_drugs.png" width="700" alt="Drug Candidates">
+</p>
 
 ## Pipeline Components
 
