@@ -42,6 +42,17 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 
 **Objective:** Identify therapeutic targets that differentiate survivors from non-survivors in sepsis patients.
 
+### Dataset
+
+| Metric | Value |
+|--------|-------|
+| Total cells | 57,133 |
+| Total genes | 33,538 |
+| Sepsis cells | 41,587 |
+| Survivors | 26,571 cells |
+| Non-survivors | 15,016 cells |
+| Timepoints | T0, T6 |
+
 ### Key Results
 
 | Analysis | Method | Key Finding |
@@ -51,14 +62,62 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 | **Target Prioritization** | Multi-evidence integration | Top target ranked #3/33,538 genes |
 | **Drug Discovery** | Enrichr + CMap L1000 | 160 drug candidates identified |
 
+### ML Model Performance
+
+| Model | AUC-ROC | Notes |
+|-------|---------|-------|
+| Random Forest | 0.958 | Baseline |
+| Gradient Boosting | 0.988 | Strong |
+| **LightGBM** | **0.991** | Best performer |
+
+### Top Predictive Genes
+
+| Rank | Gene | Importance | Biological Function |
+|------|------|------------|---------------------|
+| 1 | TMSB10 | 0.194 | Actin sequestering |
+| 2 | PSME2 | 0.103 | Proteasome activator |
+| 3 | MTRNR2L8 | 0.088 | Mitochondrial-derived |
+| 6 | HLA-DQA2 | 0.051 | MHC class II antigen presentation |
+| 7 | ISG20 | 0.033 | Interferon-stimulated gene |
+| 8 | IFI44L | 0.028 | Interferon-induced |
+| **12** | **CD52** | **0.021** | **Immune regulation (validated target)** |
+
+### Final Target Prioritization
+
+| Rank | Gene | Priority Score | Key Evidence |
+|------|------|----------------|--------------|
+| 1 | TMSB10 | 0.355 | DE + ML importance |
+| 2 | HLA-DQA2 | 0.327 | DE + ML + Druggable |
+| **3** | **CD52** | **0.290** | **DE + ML + Druggable** |
+| 4 | LY6E | 0.285 | DE + ML |
+| 5 | PSME2 | 0.271 | DE + ML |
+
 ### Validated Target: CD52
 
-The pipeline successfully identified **CD52** as a high-priority therapeutic target:
+| Evidence Type | Value | Interpretation |
+|---------------|-------|----------------|
+| Fold Change | **2.93x** | Higher in survivors |
+| P-value | < 0.001 | Highly significant |
+| ML Rank | #12 / 3,000 | Top 0.4% of genes |
+| Priority Rank | **#3 / 33,538** | Top 0.01% |
+| Known Drug | Alemtuzumab | Anti-CD52 antibody |
 
-- **ML Importance**: Ranked #12/3,000 highly variable genes
-- **Fold Change**: 2.93x higher in survivors vs non-survivors (p < 0.001)
-- **Final Priority Rank**: #3 out of 33,538 genes
-- **Druggability**: Known drug exists (alemtuzumab), but therapeutic strategy requires *agonism* not antagonism
+**Therapeutic Insight:** CD52 is *protective* in sepsis (higher in survivors). The therapeutic strategy should *enhance* CD52 signaling, not block it.
+
+### Drug Repurposing Candidates
+
+Top drugs from Enrichr signature matching that may upregulate the survivor gene program:
+
+| Drug | Score | Mechanism | CD52 in Signature? |
+|------|-------|-----------|-------------------|
+| Interferon beta-1a | 4,129 | Immunomodulator | No |
+| Interferon beta-1b | 3,247 | Immunomodulator | No |
+| Quercetin | 2,806 | Flavonoid, anti-inflammatory | No |
+| **Ubiquinol (CoQ10)** | 2,174 | Mitochondrial support | **Yes** |
+| Methotrexate | 2,434 | Immunosuppressant | No |
+| **Irinotecan** | 906 | Topoisomerase inhibitor | **Yes** |
+
+*Drugs containing CD52 in their upregulated gene signature may directly enhance CD52 expression.*
 
 ## Pipeline Components
 
@@ -229,10 +288,10 @@ The pipeline is modular - add new evidence by:
 If you use this pipeline, please cite:
 
 ```bibtex
-@software{qiu2024target,
+@software{qiu2025target,
   author = {Qiu, Xinru},
   title = {AI-Enabled Therapeutic Target Discovery Pipeline},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/xqiu625/ai-therapeutic-target-discovery}
 }
 ```
@@ -248,7 +307,7 @@ AI-enabled Target Discovery × Mechanistic Biology
 
 - Website: [xqiu625.github.io](https://xqiu625.github.io)
 - LinkedIn: [linkedin.com/in/xinru-qiu](https://linkedin.com/in/xinru-qiu)
-- Email: xinru.qiu@email.com
+- Email: xinru.reina.qiu@gmail.com
 
 ---
 
