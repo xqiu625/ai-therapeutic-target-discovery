@@ -24,34 +24,9 @@ The original study performed single-cell transcriptomic analyses on PBMCs from G
 
 This pipeline demonstrates **AI-enabled target discovery** by combining multiple analytical approaches to identify high-confidence therapeutic targets:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    AI-Enabled Target Discovery Pipeline                      │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│   scRNA-seq ──► Preprocessing ──► Multi-Modal Analysis ──► Target Ranking  │
-│                                          │                                  │
-│                          ┌───────────────┼───────────────┐                  │
-│                          ▼               ▼               ▼                  │
-│                    ┌─────────┐    ┌───────────┐   ┌────────────┐           │
-│                    │   ML    │    │    GRN    │   │ Trajectory │           │
-│                    │ Models  │    │ (SCENIC)  │   │ (Pseudotime)│          │
-│                    └────┬────┘    └─────┬─────┘   └──────┬─────┘           │
-│                         │               │                │                  │
-│                         └───────────────┼────────────────┘                  │
-│                                         ▼                                   │
-│                              ┌─────────────────────┐                        │
-│                              │ Evidence Integration │                       │
-│                              │  + Druggability      │                       │
-│                              └──────────┬──────────┘                        │
-│                                         ▼                                   │
-│                              ┌─────────────────────┐                        │
-│                              │  Drug Repurposing   │                        │
-│                              │  (CMap/Enrichr)     │                        │
-│                              └─────────────────────┘                        │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="project_overview.jpeg" width="900" alt="Sepsis Therapeutic Target Discovery Pipeline">
+</p>
 
 ## Case Study: Sepsis Therapeutic Target Discovery
 
