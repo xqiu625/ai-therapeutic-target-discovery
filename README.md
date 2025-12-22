@@ -5,6 +5,21 @@
 
 An end-to-end computational pipeline for identifying and prioritizing therapeutic targets from single-cell RNA-seq data, integrating machine learning, gene regulatory networks, trajectory analysis, and drug repurposing.
 
+## Original Study
+
+This project is a **subsequent computational analysis** building upon the foundational research published in:
+
+> **Qiu X**, Li J, Bonenfant J, Jaroszewski L, Mittal A, Klein W, Godzik A, Nair MG. *Dynamic changes in human single-cell transcriptional signatures during fatal sepsis.* **J Leukoc Biol.** 2021;110:1253-1268. [doi:10.1002/JLB.5MA0721-825R](https://doi.org/10.1002/JLB.5MA0721-825R)
+
+The original study performed single-cell transcriptomic analyses on PBMCs from Gram-negative bacterial sepsis patients at two timepoints (T0 and T6 hours post-diagnosis), comparing survivors and non-survivors. Key findings from the original work include:
+
+- **CD52** identified as a prognostic biomarker and therapeutic target correlating with improved sepsis outcomes
+- Platelet and erythroid precursor responses as drivers of fatal sepsis
+- Hypoxic stress driving immune and metabolic dysfunction in monocytes
+- Shared transcriptional signatures between fatal sepsis and severe COVID-19
+
+**This pipeline extends the original findings** by applying advanced machine learning methods, gene regulatory network analysis, and systematic drug repurposing to further validate and prioritize therapeutic targets from the same dataset (GEO accession: [GSE167363](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167363)).
+
 ## Overview
 
 This pipeline demonstrates **AI-enabled target discovery** by combining multiple analytical approaches to identify high-confidence therapeutic targets:
@@ -40,9 +55,11 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 
 ## Case Study: Sepsis Therapeutic Target Discovery
 
-**Objective:** Identify therapeutic targets that differentiate survivors from non-survivors in sepsis patients.
+**Objective:** Identify therapeutic targets that differentiate survivors from non-survivors in sepsis patients, extending the findings from the [original single-cell study](#original-study).
 
 ### Dataset
+
+Data from 5 Gram-negative bacterial sepsis patients (3 survivors, 2 non-survivors) and 2 healthy controls, collected at diagnosis (T0) and 6 hours post-diagnosis (T6).
 
 | Metric | Value |
 |--------|-------|
@@ -52,6 +69,8 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 | Survivors | 26,571 cells |
 | Non-survivors | 15,016 cells |
 | Timepoints | T0, T6 |
+
+*Data source: [GSE167363](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167363)*
 
 ### Key Results
 
@@ -103,6 +122,8 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 
 ### Validated Target: CD52
 
+CD52 was originally identified in the [foundational study](#original-study) as a prognostic biomarker correlating with lymphocyte activation and improved sepsis outcomes. This pipeline independently validates CD52 as a top therapeutic target through ML-based prioritization:
+
 | Evidence Type | Value | Interpretation |
 |---------------|-------|----------------|
 | Fold Change | **2.93x** | Higher in survivors |
@@ -111,11 +132,28 @@ This pipeline demonstrates **AI-enabled target discovery** by combining multiple
 | Priority Rank | **#3 / 33,538** | Top 0.01% |
 | Known Drug | Alemtuzumab | Anti-CD52 antibody |
 
-**Therapeutic Insight:** CD52 is *protective* in sepsis (higher in survivors). The therapeutic strategy should *enhance* CD52 signaling, not block it.
+**Therapeutic Insight:** Consistent with the original study's findings, CD52 is *protective* in sepsis (higher in survivors). The therapeutic strategy should *enhance* CD52 signaling, not block it.
 
 <p align="center">
   <img src="figures/fig7_cd52_summary.png" width="800" alt="CD52 Summary">
 </p>
+
+### External Validation of CD52 Findings
+
+Following our original publication, **independent research has validated CD52 as a critical immune regulator** in other disease contexts. A 2025 study in *Journal of Hepatology* identified CD52 as a key marker of monocyte function in cirrhosis:
+
+> **Geng A, Brenig RG, et al.** *Circulating monocytes upregulate CD52 and sustain innate immune function in cirrhosis unless acute decompensation emerges.* **J Hepatol.** 2025;83(1):146-160. [doi:10.1016/j.jhep.2024.12.031](https://doi.org/10.1016/j.jhep.2024.12.031)
+
+**Key findings from the cirrhosis study:**
+- CD52<sup>high</sup> monocytes showed enhanced phagocytosis, cytokine production, and migration
+- CD52 expression correlated with improved survival in compensated cirrhosis
+- Loss of CD52 expression marked monocyte dysfunction and infection susceptibility
+- Authors propose CD52 as a therapeutic target for immunotherapy
+
+**The study directly cites our sepsis work:**
+> *"CD52 upregulation and co-localisation with its receptor SIGLEC-10 was shown on monocytes and quiescent stem-like cells in leukaemia. **Of note, CD52 expression on lymphocytes is a prognostic biomarker correlated with survival in sepsis.**"*
+
+This independent validation across different disease contexts (sepsis, cirrhosis) strengthens the evidence for **CD52 as a broadly relevant immune checkpoint** with therapeutic potential.
 
 ### Drug Repurposing Candidates
 
@@ -302,14 +340,43 @@ The pipeline is modular - add new evidence by:
 
 ## Citation
 
-If you use this pipeline, please cite:
+If you use this pipeline, please cite both the original study and this pipeline:
 
+**Original Study:**
+```bibtex
+@article{qiu2021sepsis,
+  author = {Qiu, Xinru and Li, Jiang and Bonenfant, Jeff and Jaroszewski, Lukasz and Mittal, Aarti and Klein, Walter and Godzik, Adam and Nair, Meera G.},
+  title = {Dynamic changes in human single-cell transcriptional signatures during fatal sepsis},
+  journal = {Journal of Leukocyte Biology},
+  volume = {110},
+  number = {6},
+  pages = {1253-1268},
+  year = {2021},
+  doi = {10.1002/JLB.5MA0721-825R}
+}
+```
+
+**This Pipeline:**
 ```bibtex
 @software{qiu2025target,
   author = {Qiu, Xinru},
   title = {AI-Enabled Therapeutic Target Discovery Pipeline},
   year = {2025},
   url = {https://github.com/xqiu625/ai-therapeutic-target-discovery}
+}
+```
+
+**External Validation (CD52 in cirrhosis):**
+```bibtex
+@article{geng2025cd52,
+  author = {Geng, A and Brenig, RG and Roux, J and Lütge, M and Cheng, H-W and Flint, EE and Lussier, POG and Meier, M-A and Pop, OT and Künzler-Heule, P and Matter, MS and Wendon, J and McPhail, MJW and Soysal, S and Semela, D and Heim, M and Weston, CJ and Ludewig, B and Bernsmeier, C},
+  title = {Circulating monocytes upregulate CD52 and sustain innate immune function in cirrhosis unless acute decompensation emerges},
+  journal = {Journal of Hepatology},
+  volume = {83},
+  number = {1},
+  pages = {146-160},
+  year = {2025},
+  doi = {10.1016/j.jhep.2024.12.031}
 }
 ```
 
@@ -328,4 +395,4 @@ AI-enabled Target Discovery × Mechanistic Biology
 
 ---
 
-*This pipeline demonstrates end-to-end therapeutic target discovery from single-cell transcriptomics, integrating machine learning, network biology, and drug repurposing approaches.*
+*This pipeline demonstrates end-to-end therapeutic target discovery from single-cell transcriptomics, integrating machine learning, network biology, and drug repurposing approaches. Built upon the foundational sepsis single-cell study ([Qiu et al., J Leukoc Biol 2021](https://doi.org/10.1002/JLB.5MA0721-825R)), this work extends the original findings through computational target prioritization and drug discovery.*
