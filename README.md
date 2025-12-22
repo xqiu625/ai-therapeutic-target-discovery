@@ -25,7 +25,7 @@ The original study performed single-cell transcriptomic analyses on PBMCs from G
 This pipeline demonstrates **AI-enabled target discovery** by combining multiple analytical approaches to identify high-confidence therapeutic targets:
 
 <p align="center">
-  <img src="project_overview.jpeg" width="900" alt="Sepsis Therapeutic Target Discovery Pipeline">
+  <img src="ai-therapeutic-target-discovery-overview.jpeg" width="900" alt="Sepsis Therapeutic Target Discovery Pipeline">
 </p>
 
 ## Case Study: Sepsis Therapeutic Target Discovery
